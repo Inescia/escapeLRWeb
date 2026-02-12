@@ -113,37 +113,13 @@
             pause-autoplay-on-hover
             wrap-around
           >
-            <Slide
-              v-for="(circuit, index) in ['tours', 'richelieu', 'esclavage', 'nazis']"
-              :key="circuit"
-            >
+            <Slide v-for="circuit in ['tours', 'richelieu', 'esclavage', 'nazis']" :key="circuit">
               <!--  <AppImage
                 :source="`parcours-${circuit}.png`"
                 :text="`Circuit ${circuit}`"
                 class="object-contain"
               />-->
-              <div class="flex">
-                <div class="flex flex-col">
-                  <h4></h4>
-                  <div class="flex">
-                    <div v-for="(item, index) in [1, 2, 3]" :key="index" class="flex flex-col">
-                      <AppImage />
-                      <span></span>
-                    </div>
-                  </div>
-                  <p></p>
-                </div>
-                <div class="flex flex-col">
-                  <div class="flex">
-                    <span></span>
-                    <AppImage />
-                  </div>
-                  <AppButton :label="$t('GLOBAL.BUY_CODE')" class="mt-4" />
-                </div>
-              </div>
-              <p class="text-sm text-left">
-                {{ index }}
-              </p>
+              <CircuitCard :circuit="circuit" />
             </Slide>
             <template #addons>
               <Navigation />
@@ -205,12 +181,12 @@ import SectionTitle from '@/components/SectionTitle.vue'
 import { EVENT_LIST, KEY_NUMBER_LIST, STAMP_LIST } from '@/data/global'
 import { formatImageUrl } from '@/data/helpers'
 import TimeLine from '@/components/TimeLine.vue'
-import AppButton from '@/components/AppButton.vue'
+import CircuitCard from '@/components/CircuitCard.vue'
 
 export default {
   name: 'HomePage',
   components: {
-    AppButton,
+    CircuitCard,
     AppImage,
     Carousel,
     KeyNumber,

@@ -1,27 +1,27 @@
 // Title, subtitle, contexte are handled directly in the translation files
 export const CIRCUITS = {
   tours: {
-    level: 1,
-    duration: 120,
-    distance: 2,
+    level: 'Facile',
+    duration: '120 min',
+    distance: '2 km',
     price: 5,
   },
   richelieu: {
-    level: 2,
-    duration: 120,
-    distance: 3.5,
+    level: 'Modéré',
+    duration: '120 min',
+    distance: '2 km',
     price: 8,
   },
   esclavage: {
-    level: 2,
-    duration: 120,
-    distance: 3,
+    level: 'Modéré',
+    duration: '120 min',
+    distance: '2 km',
     price: 8,
   },
   nazis: {
-    level: 3,
-    duration: 120,
-    distance: 5,
+    level: 'Difficile',
+    duration: '120 min',
+    distance: '2 km',
     price: 10,
   },
 }
