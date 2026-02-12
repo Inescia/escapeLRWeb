@@ -1,0 +1,40 @@
+{
+  "name": "escape_lr",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "lint": "eslint . --fix --cache",
+    "dev": "vite",
+    "format": "prettier --write --experimental-cli src/",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "swiper": "^12.1.0",
+    "vue": "^3.5.26",
+    "vue-i18n": "^9.1.2",
+    "vue-router": "^4.6.4",
+    "vue3-carousel": "^0.17.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@vitejs/plugin-vue": "^6.0.3",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "autoprefixer": "^10.4.23",
+    "eslint": "^9.39.2",
+    "eslint-plugin-vue": "~10.6.2",
+    "globals": "^17.0.0",
+    "postcss": "^8.5.6",
+    "prettier": "3.7.4",
+    "sass": "^1.97.2",
+    "tailwindcss": "^3.4.7",
+    "vite": "^7.3.0",
+    "vite-plugin-vue-devtools": "^8.0.5",
+    "vue-cli-plugin-vue-i18n": "~1.0.1",
+    "vue-i18n": "^11.2.8"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "type": "module"
+}

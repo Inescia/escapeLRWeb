@@ -1,0 +1,425 @@
+{
+  "ABOUT": {
+    "TITLE_LIST": ["Me as a Developer", "My Key Technologies"],
+    "DESCRIPTION": "👋 Hello! \nFrom a technical perspective, I am a full-stack developer with a specialization in UX design, and a strong focus on front-end development.\nIn simple terms: I am a developer specialized in creating and improving websites or applications, with expertise in user experience (UX) design. 🚀",
+    "EVENT_LIST": [
+      { "TITLE": "1st Codes", "CONTENT": "2010 - Self-taught training" },
+      {
+        "TITLE": "Cognitive Engineer Formation",
+        "CONTENT": "2019 - Ecole Nationale Supérieur de Cognitique\nDouble expertise in development and UX design\nMultidisciplinary approach"
+      },
+      { "TITLE": "UX Designer", "CONTENT": "2021 - Lim Group\nApplication for connected object" },
+      {
+        "TITLE": "Front-end Developper",
+        "CONTENT": "2022 - Tehtris (Cybersecurity)\nManagement and organization of large-scale projects\nAwareness of security issues"
+      },
+      { "TITLE": "Freelance", "CONTENT": "2025 - Creating Ingenious Code !" }
+    ],
+    "KEY_NUMBER_LIST": ["code experience", "obtained in addition", "finalized"]
+  },
+
+  "CONTACT": {
+    "EMAIL": "Email *",
+    "REQUIRED_FIELDS": "Please fill in all fields",
+    "MESSAGE": "Message *",
+    "SUJET": "Subject *",
+    "TITLE": "Contact"
+  },
+
+  "GLOBAL": {
+    "CATEGORIES": {
+      "ABOUT": "About",
+      "CONTACT": "Contact",
+      "HOME": "Home",
+      "OFFERS": "Offers",
+      "PORTFOLIO": "Portfolio"
+    },
+    "CONTACT": "Get in Touch",
+    "ERROR": { "VIDEO": "Sorry, your browser does not support videos." },
+    "LEGAL": "Legal Notice",
+    "SEE_APP": "See the application",
+    "SEE_OFFER": "See the offer",
+    "SEE_WEBSITE": "See the website",
+    "SEND": "Send",
+    "SWIPE": "Swipe left or right"
+  },
+
+  "HOME": {
+    "FORM": {
+      "QUESTIONS": {
+        "professional": "Are you a professional?",
+        "existing": "Do you have an existing solution (site or application)?",
+        "improvement": "Do you want to improve the design or usability of your solution?",
+        "speed": "Are you looking for a very fast service?",
+        "selling": "Are you planning to sell products/services online?",
+        "hobbyPresentation": "Would you like to share your passion/art/interest?",
+        "offersPresentation": "Would you like to present your offers/services?",
+        "desktop": "Will you be using it on your computer?",
+        "mobile": "Will you be using it on your cell phone?",
+        "internalImprovement": "Do you want something that optimizes your daily life?",
+        "internal": "Will use of the solution be limited to certain people (e.g. employees)?",
+        "NEXT": "Next question"
+      },
+      "RESULTS": {
+        "audit": {
+          "TITLE": "Audit UX",
+          "CONTENT": "It seems that you want to optimize the user experience of your current site.\nThe UX audit is the right offer for you, offering a good compromise between speed and efficiency. We analyze user paths, navigation and structure to detect friction points. You'll receive concrete recommendations for making your interface more intuitive and efficient.\n\nAn ideal solution for boosting user engagement and achieving your objectives."
+        },
+        "crossApp": {
+          "TITLE": "Cross-platform application",
+          "CONTENT": "Are you looking for a high-performance solution that can be used on multiple platforms?\nThe multiplatform application is perfect for your needs. Develop an application that works on mobile and desktop, with a fluid experience on all supports.\n\nIt's the ideal solution for reaching a varied audience and satisfying multiple uses, while optimizing your development resources."
+        },
+        "desktopApp": {
+          "TITLE": "Desktop application",
+          "CONTENT": "Your project seems to require an application specifically designed for computer use.\nThe desktop application is the perfect solution for your professional needs. With robust functionality and optimized navigation, it meets the requirements of users in a dedicated environment."
+        },
+        "e-commerce": {
+          "TITLE": "E-commerce websites",
+          "CONTENT": "It seems that your aim is to sell your products or services online in a simple and secure way.\nAn e-commerce site is the ideal solution for you. With attractive design, intuitive functionality and secure payment, you'll be able to offer your customers a seamless shopping experience 24 hours a day, all while boosting your sales."
+        },
+        "mobileApp": {
+          "TITLE": "Mobile application",
+          "CONTENT": "Do you want to meet users' needs wherever they are?\nA bespoke mobile app is the perfect option. Designed to offer intuitive navigation and functionality tailored to mobile use, it will boost engagement and enable direct interaction with your audience."
+        },
+        "mystery": {
+          "TITLE": "Mystery",
+          "CONTENT": "Your project seems unique and requires a fully customized solution.\nContact us for a tailor-made approach guaranteed to meet your needs. Together, we'll define the functionality and design that will make your project as effective as it is unique."
+        },
+        "showcase": {
+          "TITLE": "Showcase websites",
+          "CONTENT": "A showcase site is the perfect way to present your company and increase its online visibility. It lets you showcase your services, products or values in a professional way, without direct sales.\nAccessible 24 hours a day, it becomes your digital business card, making it easy to get in touch and find out more about your business. A real ally in strengthening your presence and attracting new customers."
+        },
+        "tests": {
+          "TITLE": "User tests",
+          "CONTENT": "You want to be sure that your solution perfectly matches your users' expectations?\nUser testing is the ideal answer. It may take longer than a UX audit, but it allows us to go further in the optimization process. By involving people from your target audience, we identify sticking points and optimize the user experience. A key step in guaranteeing satisfaction and loyalty."
+        }
+      }
+    },
+    "KEY_NUMBER_LIST": [
+      "Experiences online start with a search engine, hence the importance of SEO",
+      "Users prefer visiting a company’s website rather than its social media",
+      "Consumers conduct online research before making a purchase",
+      "Users are willing to pay more for a better user experience",
+      "Conversion rates improve with good user experience",
+      "For every dollar invested in UX, it returns between 2 and 100 dollars",
+      "Users abandon their shopping carts due to poor user experience",
+      "Consumers judge a company's credibility based on the quality of its website",
+      "Consumers read online reviews before buying a product",
+      "Consumers do not trust a company without a website"
+    ],
+    "OFFERS": {
+      "SUBTITLE": "From the smallest challenge to your biggest ambition, we bring your projects to life!"
+    },
+    "SLOGAN_LIST": [
+      "Engineer Developer & UX Designer",
+      "Code is not just code",
+      "Got a project?",
+      "I’ll assist you with tailored solutions: easy-to-use websites, high-performing online stores, custom applications, and intuitive design made for your users."
+    ],
+    "SUPPORT": "All Support",
+    "TITLES": {
+      "CONCEPT": "Concept",
+      "CIRCUITS": "Circuits",
+      "PUBLICS": "Publics & Partners",
+      "PROGRESS": "Progress"
+    }
+  },
+
+  "LEGAL": [
+    {
+      "TITLE": "Site owner",
+      "CONTENT": "Ingenious Code ! / Inès Ciattoni\nAddress : 70 Avenue de Moutille 33360 Cenac FRANCE\nTelephone : 07.60.27.45.41\nMail :  {mail}"
+    },
+    {
+      "TITLE": "Hosting",
+      "CONTENT": "Google Ireland Limited \nAddress : Gordon House, Barrow Street, Dublin 4, Irlanden\nTelephone : +353 1 543 1000\nSite : https://firebase.google.com"
+    },
+    {
+      "TITLE": "Intellectual Property & Personal Data",
+      "CONTENT": "The texts, images, logos and other content on this site are protected and their unauthorized reproduction or use is strictly prohibited.\nThis site does not collect or store any personal data about users."
+    }
+  ],
+
+  "OFFERS": {
+    "HIGHLIGHT_LIST": [
+      "Custom creation based on your idea",
+      "Full support from A to Z with regular updates",
+      "A real understanding of code in a broad sense",
+      "High responsiveness (reply within the same day)",
+      "Post-delivery follow-up"
+    ],
+    "OFFER_LIST": [
+      {
+        "TITLE": "UX Design",
+        "INTRO": {
+          "QUESTION": "Why is UX essential for your website?",
+          "RESPONSE": "BOLD/UX/BOLD plays a key role in BOLD/conversion/BOLD and BOLD/user retention/BOLD. A well-designed site improves BOLD/navigation/BOLD, reduces the BOLD/bounce rate/BOLD, and increases the chances that your visitors will take the desired action (BOLD/purchase/BOLD, BOLD/contact/BOLD, BOLD/registration/BOLD, etc.). By investing in an optimal BOLD/user experience/BOLD, you guarantee your users a smooth and enjoyable experience, while maximizing the BOLD/efficiency/BOLD of your site (BOLD/other specific UX services/BOLD can be provided upon request).\n\nChoose a BOLD/quality user experience/BOLD for your visitors and turn every BOLD/interaction/BOLD into an BOLD/opportunity/BOLD!"
+        },
+        "LIST": [
+          {
+            "TITLE": "UX Audit (User Experience Audit)",
+            "CONTENT": "We conduct a BOLD/comprehensive and in-depth audit/BOLD of your existing website to BOLD/identify friction points/BOLD that may harm the BOLD/user experience/BOLD and hinder your BOLD/strategic objectives/BOLD. Our analysis covers key aspects such as BOLD/navigation structure/BOLD, BOLD/clarity and information hierarchy/BOLD, and BOLD/smooth user journeys/BOLD to enhance engagement. We also assess BOLD/accessibility/BOLD, ensuring that your website is BOLD/inclusive and meets industry standards/BOLD, while testing its BOLD/responsiveness/BOLD across different devices (BOLD/desktop, mobile, tablet/BOLD).\n\nAt the end of this audit, we provide you with a BOLD/detailed and customized report/BOLD, including a BOLD/summary of identified issues/BOLD and BOLD/actionable recommendations/BOLD, prioritized based on their impact. The goal is to BOLD/improve usability/BOLD, BOLD/efficiency/BOLD, and BOLD/user satisfaction/BOLD on your site."
+          },
+          {
+            "TITLE": "Wireframes, Mockups, and Interactive Prototyping",
+            "CONTENT": "We design custom BOLD/visual mockups/BOLD and BOLD/wireframes/BOLD (functional mockups) to bring your project to life.\n\nThese prototypes provide a concrete view of the BOLD/interaction/BOLD with your interface, allowing you to test and optimize different BOLD/ergonomic/BOLD solutions before the launch. With these tools, you can visualize the BOLD/structure/BOLD of your site in advance and anticipate development changes, while ensuring intuitive BOLD/navigation/BOLD and clear BOLD/information hierarchy/BOLD.\n\nEvery detail is carefully crafted to enhance the BOLD/user experience/BOLD, combining BOLD/simplicity/BOLD, BOLD/aesthetics/BOLD, and BOLD/performance/BOLD, while providing you with the flexibility needed to adjust the design based on feedback and specific needs."
+          },
+          {
+            "TITLE": "User Testing",
+            "CONTENT": "To ensure that your site truly meets the real needs of your users, we organize BOLD/user tests/BOLD in a structured and tailored approach. We involve users who are representative of your BOLD/target audience/BOLD, based on specific profiles, in test sessions where they interact with your site.\n\nThese sessions allow us to gather their feedback, evaluate the BOLD/performance/BOLD of the site, and analyze their experience to identify strengths and areas for improvement.\n\nBy collecting their insights, we can detect potential BOLD/roadblocks/BOLD, navigation issues, or unintuitive features. Based on this information, we propose targeted adjustments to optimize the BOLD/user experience/BOLD and enhance the fluidity and efficiency of your site to better meet your audience’s expectations. These tests are crucial to ensure the relevance of your project before its large-scale launch."
+          }
+        ]
+      },
+      {
+        "TITLE": "Showcase & E-commerce Sites",
+        "INTRO": {
+          "QUESTION": "Give new life to your business with a captivating showcase site or a high-performing online store.",
+          "RESPONSE": "BOLD/Custom design:/BOLD a website that reflects your brand with a modern, professional style (brand guidelines created if necessary)\nBOLD/Optimized content:/BOLD clear pages to present your business, products, and facilitate contact.\nBOLD/Accessibility:/BOLD a smooth user experience, adapted to all devices (mobile, tablet, desktop).\nBOLD/SEO (Search Engine Optimization):/BOLD to help your clients find you easily.\nBOLD/Maintenance:/BOLD so you don’t have to worry about anything.\n\nWhether you're an artisan, freelancer, or small business, our team designs high-performing showcase and e-commerce websites tailored to your needs, ready to boost your visibility and sales."
+        },
+        "LIST": [
+          {
+            "TITLE": "Showcase Sites",
+            "CONTENT": "A showcase site is an online platform designed to present your business, products, services, or values. Unlike an e-commerce site, it doesn't allow direct online sales but plays a key role in your digital strategy: informing, reassuring, and attracting visitors.\n\nIt’s your digital business card, accessible 24/7, allowing your customers and prospects to: \nBOLD/Discover who you are:/BOLD a striking homepage presenting your activity and values.\nBOLD/Explore your services or products:/BOLD detailed pages explaining what you offer.\nBOLD/Get in touch with you:/BOLD a contact form, an interactive map, or your contact details.\nBOLD/Access useful information:/BOLD hours, testimonials, portfolio, news, etc."
+          },
+          {
+            "TITLE": "E-commerce Site",
+            "CONTENT": "An e-commerce site is a digital platform that allows you to sell products or services directly online. Accessible anytime, anywhere, it offers a convenient alternative to physical stores while expanding the reach of businesses to a broader audience.\n\nIt typically includes several essential elements:\nBOLD/A digital storefront:/BOLD Displays your products or services with detailed descriptions, images, and key information such as prices or available options.\nBOLD/A shopping cart:/BOLD Allows customers to select and organize their purchases before finalizing their order.\nBOLD/A secure payment system:/BOLD Integrates solutions such as credit cards, PayPal, or other online payment methods.\nBOLD/Additional features:/BOLD Such as order tracking, customer reviews, promotions, or personalized shopping experiences.\nBOLD/Admin access:/BOLD Allows you to manage products, orders, etc. (training on the tool is also available)."
+          }
+        ]
+      },
+      {
+        "TITLE": "Applications",
+        "INTRO": {
+          "QUESTION": "Transform your idea into a powerful and intuitive application!",
+          "RESPONSE": "BOLD/Complete customization:/BOLD Tailored to your goals and the specific needs of your users.\nBOLD/Modern technologies:/BOLD To ensure high-performing, secure, and scalable applications.\nBOLD/User experience:/BOLD Smooth, intuitive, and enjoyable, no matter the type of application.\nBOLD/Tailored support:/BOLD From the beginning to the end of your project, our team supports you.\nBOLD/Security and compliance:/BOLD To protect your data and comply with current regulations (GDPR).\nBOLD/Maintenance:/BOLD To keep your application up-to-date with technological advancements and prevent usability bugs."
+        },
+        "LIST": [
+          {
+            "TITLE": "Web SaaS (Software as a Service)",
+            "CONTENT": "A BOLD/SaaS/BOLD (Software as a Service) application is a software solution that is accessible online, without the need to download or install anything on the user's device. It allows your users to benefit from a scalable, flexible solution that is continuously updated, accessing all features directly via the internet. This model eliminates infrastructure constraints, providing a smooth and scalable experience.\n\nOur BOLD/SaaS/BOLD solutions are designed to meet your specific needs while ensuring enhanced BOLD/security/BOLD and optimal BOLD/performance/BOLD, guaranteeing ease of management and rapid adoption by your users."
+          },
+          {
+            "TITLE": "Mobile",
+            "CONTENT": "We specialize in the development of BOLD/custom mobile applications/BOLD tailored to your business's unique needs. Whether you're launching a BOLD/service/BOLD, an online BOLD/store/BOLD, or a platform, our apps are optimized for mobile ergonomics and performance, offering a smooth and intuitive interaction with your users.\n\nDesigned to be robust, fast, and user-friendly, our apps ensure user satisfaction, whether for commercial or informational purposes. Each app is crafted to maximize the BOLD/user experience/BOLD while considering the constraints of different mobile operating systems."
+          },
+          {
+            "TITLE": "Desktop (Software)",
+            "CONTENT": "We design robust desktop applications tailored to specific professional needs. Whether for internal use or for BOLD/end customers/BOLD, our software is built to provide a simple interface and reliable BOLD/performance/BOLD, ensuring optimal productivity.\n\nThey seamlessly integrate into your work environment, with customized features to meet complex or specialized tasks. Our desktop applications are designed to be scalable and easy to maintain while ensuring maximum security and quick user adoption."
+          },
+          {
+            "TITLE": "Cross-Platform",
+            "CONTENT": "We develop BOLD/multi-platform/BOLD applications that work across multiple devices (web, mobile, desktop) from a single codebase. This consistent development approach saves time and resources while ensuring a uniform experience across all platforms.\n\nOur BOLD/multi-platform/BOLD solutions are designed to be performant and adapted to the specificities of each environment while offering a consistent user interface. They maximize BOLD/efficiency/BOLD and reduce development costs, while ensuring simplified maintenance through code centralization."
+          }
+        ]
+      }
+    ],
+    "PRICE": "Starting at {price}€",
+    "REQUEST": "On request",
+    "SLOGAN": "Creations that live up to your ideas",
+    "TITLES": {
+      "HIGHLIGHTS": "Highlights",
+      "PROCESS": "Work Process"
+    },
+    "WORK": "Work",
+    "WORK_PROCESS": {
+      "DELIVERABLE": "Deliverable:",
+      "STEP_LIST": [
+        {
+          "TITLE": "Project Definition",
+          "DESCRIPTION": "The first step is to fully understand your needs and lay the foundations of the project. During this phase, we collaborate with you to define the goals, features, technical constraints, target audience, and other essential aspects for the project's success. \nWe create a summary document that captures all key information and client expectations. This document serves as a reference throughout the project to ensure clear direction and avoid ambiguity.",
+          "DELIVERABLE": "Project summary document."
+        },
+        {
+          "TITLE": "Analysis and Planning",
+          "DESCRIPTION": "Once the project is well-defined, we move on to the analysis and in-depth planning stage. At this point, we create a specifications document. This detailed document covers all technical aspects of the project, including specific features, time and budget constraints, technological choices, development and integration strategies, and validation processes.\nThis phase ensures that everyone, from the client to the developers, has a clear understanding of what needs to be done and under what conditions. It serves as a guide throughout the development phase.",
+          "DELIVERABLE": "Specifications document, project schedule."
+        },
+        {
+          "TITLE": "Functional Mockups",
+          "DESCRIPTION": "During this phase, we develop functional mockups (and optionally interactive prototypes) to illustrate the structure of the application or website. These mockups show the user interface in a simplified manner, without the final design, in order to focus solely on ergonomics and user flow.\nThis allows the client to validate the navigation, element layout, and flow logic of the application or website. Adjustments can be made at this stage to ensure the project aligns with the client's expectations.",
+          "DELIVERABLE": "Validated interactive functional mockups (prototypes) by the client."
+        },
+        {
+          "TITLE": "Visual Mockups",
+          "DESCRIPTION": "Once the functional mockups are validated, we proceed to create visual mockups. At this stage, we apply the graphic design to the prototype to give a clear idea of what the final appearance of the site or application will look like. We use elements of the visual identity (logo, colors, typography) to propose a consistent, attractive design adapted to the user experience.\nThis phase allows for a visual validation of the product's aesthetics before moving on to the development phase. The client can suggest modifications or adjustments at this stage to ensure the design matches their vision.",
+          "DELIVERABLE": "Validated visual mockups by the client."
+        },
+        {
+          "TITLE": "Development and Testing",
+          "DESCRIPTION": "This is the phase where the validated mockups come to life. Developers work on the code for the application or website, following the specifications defined in the specifications document and the mockups. Development is carried out in iterative steps, with regular internal testing to ensure everything functions as expected. \nAt the same time, we conduct quality assurance testing to check functionality, performance, security, and the user experience.",
+          "DELIVERABLE": "Beta version of the site or application, also validated by the client."
+        },
+        {
+          "TITLE": "Launch",
+          "DESCRIPTION": "Once all features have been validated and the product is ready, we proceed to launch. This phase involves deploying to the production environment, making the application or website accessible to end users. We also ensure that all technical configurations (hosting, domain name, security) are properly set up to ensure optimal product availability.\nThis phase also includes the full delivery of the source code to the client.",
+          "DELIVERABLE": "Site or application live, source code delivery."
+        },
+        {
+          "TITLE": "Maintenance",
+          "DESCRIPTION": "After launch, it may be necessary to maintain the application or site to ensure its stability and evolution over time. We offer optional maintenance services, which include:\n - Regular updates to ensure security and compatibility with the latest technologies.\n - Bug fixes and continuous improvements based on user feedback.\n - Addition of additional features as your needs evolve.\nThis maintenance ensures that your site or application remains functional, secure, and up-to-date.",
+          "DELIVERABLE": "Ongoing support and maintenance (if subscribed)."
+        }
+      ]
+    }
+  },
+
+  "PORTFOLIO": {
+    "PROJECTS": {
+      "horseSafe": {
+        "NAME": "HorseSafe",
+        "SUBTITLE": "Horse Surveillance",
+        "CONTEXT": "This BOLD/project/BOLD was developed in response to a BOLD/disturbing wave of horse mutilations/BOLD, which led owners to organize BOLD/surveillance rounds/BOLD to protect their animals. In order to BOLD/simplify and optimize this vigilance/BOLD, we designed a dedicated application that allows easy recording of the BOLD/rounds performed/BOLD and viewing on a map the BOLD/reports of mutilation acts or suspicious behaviors/BOLD.\nTo ensure BOLD/data privacy and security/BOLD, a BOLD/robust protection system/BOLD has been implemented.",
+        "FEATURES": {
+          "interface": "The BOLD/interface design/BOLD allows the creation and customization of the BOLD/visual appearance/BOLD of the application or website, structuring the BOLD/layout of elements/BOLD, choosing BOLD/colors, typography, and interactions/BOLD.",
+          "accounts": "The BOLD/authentication/BOLD ensures BOLD/secure access to the application or website/BOLD by BOLD/verifying users' identity/BOLD, while facilitating the BOLD/creation, modification, and management of their profiles and access rights/BOLD.",
+          "bdd": "The BOLD/database management/BOLD involves BOLD/organizing and storing the necessary information/BOLD for the application or website in a BOLD/structured and manageable way/BOLD, ensuring BOLD/fast and secure performance/BOLD.",
+          "adminAccounts": "The BOLD/admin accounts/BOLD allow to BOLD/manage and oversee all features of the application or website/BOLD, offering BOLD/full access to settings, users, and content management/BOLD.",
+          "identityCheck": "The BOLD/identity check/BOLD allows to BOLD/verify users' authenticity/BOLD by BOLD/validating their personal information/BOLD, ensuring BOLD/secure access/BOLD.",
+          "map": "The BOLD/Google Maps integration/BOLD allows to BOLD/display interactive maps/BOLD, with the ability to BOLD/draw routes and add landmarks/BOLD, facilitating BOLD/navigation and localization of key elements/BOLD."
+        }
+      },
+      "iSport": {
+        "NAME": "iSport",
+        "SUBTITLE": "Automated User Tests",
+        "CONTEXT": "This BOLD/application/BOLD was designed as a BOLD/remote user testing tool/BOLD to evaluate BOLD/different versions of a new interface/BOLD while BOLD/processing the results/BOLD. This approach allows to BOLD/reach a larger user base/BOLD and BOLD/optimize the testing process/BOLD. \nIt relies on two major aspects: on one hand, BOLD/displaying the different interface versions to compare/BOLD, and on the other hand, a BOLD/test management module/BOLD including BOLD/scenarios, user action recording, and result analysis/BOLD. The main goal was to BOLD/determine the most effective version/BOLD.\nIn parallel, the BOLD/application/BOLD was enhanced with new features and a gamified dimension/BOLD.",
+        "FEATURES": {
+          "interface": "The BOLD/interface design/BOLD allows the creation and customization of the BOLD/visual appearance/BOLD of the application or website, structuring the BOLD/layout of elements/BOLD, choosing BOLD/colors, typography, and interactions/BOLD.",
+          "bdd": "The BOLD/database management/BOLD involves BOLD/organizing and storing the necessary information/BOLD for the application or website in a BOLD/structured and manageable way/BOLD, ensuring BOLD/fast and secure performance/BOLD.",
+          "video": "The BOLD/video integration/BOLD allows to BOLD/add videos/BOLD within the application or website, with BOLD/integrated interactive elements/BOLD.",
+          "tests": "The BOLD/user tests/BOLD allow to BOLD/evaluate the user experience and ergonomics/BOLD of an application or website by BOLD/gathering direct feedback from users/BOLD, in order to BOLD/identify areas of improvement/BOLD and BOLD/optimize the interface/BOLD.",
+          "stats": "The BOLD/statistical analysis of results/BOLD allows to BOLD/collect and analyze data/BOLD to BOLD/extract key insights/BOLD, thus facilitating BOLD/decision-making and performance optimization/BOLD."
+        }
+      },
+      "superheroes": {
+        "NAME": "Superheroes",
+        "SUBTITLE": "Presentation of superheroes",
+        "CONTEXT": "This BOLD/project/BOLD consisted of the BOLD/design of a platform for presenting superheroes/BOLD and served as a BOLD/integration exercise/BOLD for all new arrivals in the company. The goal was to allow everyone BOLD/to familiarize themselves with the technical stack/BOLD used internally and to get acquainted with BOLD/the team's best development practices/BOLD.",
+        "FEATURES": {
+          "interface": "The BOLD/interface design/BOLD allows you to design and customize the BOLD/visual appearance/BOLD of the application or site, structuring BOLD/the layout of the elements/BOLD, choosing BOLD/colors, typography, and interactions/BOLD.",
+          "bdd": "BOLD/The database management/BOLD consists of BOLD/organizing and storing the information/BOLD necessary for the application or site, BOLD/in a structured and easy-to-manage way/BOLD, to ensure BOLD/fast and secure operation/BOLD.",
+          "translation": "BOLD/Internationalization/BOLD consists of adapting the BOLD/application or site/BOLD so that it can be easily used BOLD/in different languages and regions/BOLD, in order to make the product BOLD/accessible to a global audience/BOLD.",
+          "api": "BOLD/The API integration/BOLD allows you to BOLD/connect the application or site to external services/BOLD to enrich its features and BOLD/facilitate the exchange of data/BOLD in a smooth and secure manner."
+        }
+      },
+      "inespecteurLaeti": {
+        "NAME": "Inespecteur Laeti",
+        "SUBTITLE": "Alerts for competitions",
+        "CONTEXT": "Passionate about horseback riding, I developed this application to address a BOLD/recurring need/BOLD: the difficulty in obtaining spots in competitions. The application allows my circle and myself to BOLD/monitor the availability of spots in real time/BOLD and be alerted as soon as an opportunity arises.\nThanks to this BOLD/notification system/BOLD, users can react quickly and BOLD/maximize their chances of getting a spot/BOLD, thus avoiding frustrations linked to full events.",
+        "FEATURES": {
+          "interface": "The BOLD/interface design/BOLD allows you to design and customize the BOLD/visual appearance/BOLD of the application or site, structuring BOLD/the layout of the elements/BOLD, choosing BOLD/colors, typography, and interactions/BOLD.",
+          "bdd": "BOLD/Database management/BOLD consists of BOLD/organizing and storing the information/BOLD necessary for the application or site, BOLD/in a structured and easy-to-manage way/BOLD, to ensure BOLD/fast and secure operation/BOLD.",
+          "accounts": "BOLD/Authentication/BOLD secures BOLD/access to the application or site/BOLD by BOLD/verifying the identity of the users/BOLD, while facilitating BOLD/the creation, modification, and management of their profiles and access rights/BOLD.",
+          "webscrapping": "BOLD/Web scraping/BOLD is the BOLD/automatic extraction of information from websites/BOLD, making it easier to access BOLD/relevant external data/BOLD.",
+          "functions": "BOLD/Server functions/BOLD allow you to BOLD/perform actions at regular intervals/BOLD, without the need for the BOLD/application or site to be active/BOLD, offering BOLD/automated background task management/BOLD.",
+          "notif": "The BOLD/notification system/BOLD allows you to BOLD/send alerts or messages to users in real time/BOLD, informing them BOLD/of important events or actions/BOLD."
+        }
+      },
+      "glowUX": {
+        "NAME": "Glow UX",
+        "SUBTITLE": "UX Design Experts",
+        "CONTEXT": "As part of a BOLD/collaborative project/BOLD with friends, I created a BOLD/showcase site/BOLD to present our BOLD/UX design activity/BOLD. The goal was to highlight BOLD/our approach, services, and achievements/BOLD through a BOLD/clear and intuitive interface/BOLD, while applying BOLD/fundamental user experience principles/BOLD.",
+        "FEATURES": {
+          "interface": "The BOLD/interface design/BOLD allows you to design and customize the BOLD/visual appearance/BOLD of the application or site, structuring BOLD/the layout of the elements/BOLD, choosing BOLD/colors, typography, and interactions/BOLD.",
+          "translation": "BOLD/Internationalization/BOLD consists of adapting the BOLD/application or site/BOLD so that it can be easily used BOLD/in different languages and regions/BOLD, to make the product BOLD/accessible to a global audience/BOLD.",
+          "contact": "The BOLD/contact form/BOLD allows users to BOLD/easily send messages/BOLD through the application or site, with a BOLD/automated email system/BOLD."
+        }
+      },
+      "glovers": {
+        "NAME": "Glovers",
+        "SUBTITLE": "Equestrian and sports gloves",
+        "CONTEXT": "I created this BOLD/showcase site/BOLD for a brand specializing in BOLD/equestrian and sports gloves/BOLD. The goal was to design a BOLD/elegant and functional platform/BOLD that showcases BOLD/the products, their quality, and their technicality/BOLD.\nThe site was intended to BOLD/reflect the brand's identity/BOLD while offering a BOLD/smooth and intuitive navigation/BOLD for visitors.\nThis BOLD/project/BOLD was part of an approach to BOLD/promote the brand's image/BOLD while ensuring a BOLD/smooth and intuitive user experience/BOLD.",
+        "FEATURES": {
+          "interface": "The BOLD/interface design/BOLD allows you to design and customize the BOLD/visual appearance/BOLD of the application or site, structuring BOLD/the layout of the elements/BOLD, choosing BOLD/colors, typography, and interactions/BOLD.",
+          "translation": "BOLD/Internationalization/BOLD consists of adapting the BOLD/application or site/BOLD so that it can be easily used BOLD/in different languages and regions/BOLD, to make the product BOLD/accessible to a global audience/BOLD.",
+          "seo": "BOLD/SEO (Search Engine Optimization)/BOLD involves BOLD/optimizing the application or site/BOLD to improve its visibility on search engines/BOLD, attracting more visitors BOLD/organically/BOLD."
+        }
+      },
+      "horsePlanner": {
+        "NAME": "Horse Planner",
+        "SUBTITLE": "Horse Management",
+        "CONTEXT": "I developed an application for BOLD/horse outing management/BOLD, designed to help BOLD/equestrian facility managers/BOLD organize and track BOLD/horse-related activities/BOLD. The goal was to provide them with a clear overview of the BOLD/outings schedule/BOLD, allowing them to easily track the BOLD/completed tasks and those remaining to be done/BOLD.\nThis solution aims to simplify BOLD/daily management/BOLD, avoid forgetfulness, and optimize organization efficiently, while facilitating BOLD/team coordination/BOLD.",
+        "FEATURES": {
+          "interface": "BOLD/Interface design/BOLD allows you to design and customize the BOLD/visual appearance/BOLD of the application or site, structuring BOLD/the layout of elements/BOLD, choosing BOLD/colors, typography, and interactions/BOLD.",
+          "accounts": "BOLD/Authentication/BOLD secures BOLD/access to the application or site/BOLD by BOLD/verifying user identities/BOLD, while facilitating BOLD/creation, modification, and management of profiles and access rights/BOLD.",
+          "bdd": "BOLD/Database management/BOLD involves BOLD/organizing and storing necessary information/BOLD for the application or site, BOLD/in a structured and easily manageable way/BOLD, ensuring BOLD/fast and secure operation/BOLD."
+        }
+      },
+      "passionnementCheval": {
+        "NAME": "Passionnément Cheval",
+        "SUBTITLE": "Online Tack Shop",
+        "CONTEXT": "This project consisted of the BOLD/design of an online shop/BOLD for a BOLD/tack store/BOLD. The goal was to provide an BOLD/intuitive and secure platform/BOLD that allows customers to easily browse through BOLD/product categories/BOLD and place their BOLD/orders online/BOLD.\nThe site also integrated BOLD/inventory management/BOLD and BOLD/product customization/BOLD features, thus offering a smooth shopping experience tailored to the specific needs of BOLD/equestrians and horse owners/BOLD.",
+        "FEATURES": {
+          "interface": "BOLD/Interface design/BOLD allows you to design and customize the BOLD/visual appearance/BOLD of the application or site, structuring BOLD/the layout of elements/BOLD, choosing BOLD/colors, typography, and interactions/BOLD.",
+          "cms": "BOLD/Setting up an e-commerce CMS/BOLD allows you to BOLD/configure and personalize an online sales platform/BOLD, facilitating BOLD/product, payment, order, and user experience management/BOLD, while offering a BOLD/turnkey solution for merchants/BOLD.",
+          "payment": "BOLD/Payment integration/BOLD allows you to BOLD/configure and secure financial transactions/BOLD on the application or site, offering users BOLD/varied payment options/BOLD.",
+          "shipping": "BOLD/Shipping integration/BOLD allows you to BOLD/manage and track order shipments/BOLD, connecting the application or site to BOLD/transport services/BOLD, offering customers BOLD/appropriate options and real-time tracking/BOLD.",
+          "seo": "BOLD/SEO (Search Engine Optimization)/BOLD involves BOLD/optimizing the application or site/BOLD to improve BOLD/visibility on search engines/BOLD, to attract more visitors BOLD/organically/BOLD."
+        }
+      },
+      "animarah": {
+        "NAME": "Animarah",
+        "SUBTITLE": "Animal Communication",
+        "CONTEXT": "The idea was to create a BOLD/showcase site/BOLD for an BOLD/animal communication/BOLD service, aiming to promote consultation services to better understand the BOLD/needs and emotions of animals/BOLD. The goal was to design a BOLD/clear and calming platform/BOLD, reflecting the compassionate and respectful philosophy of animal communication.\nThis project allowed me to develop an BOLD/intuitive design/BOLD, fostering trust and tranquility, while integrating features enabling visitors to BOLD/easily contact/BOLD and discover the BOLD/services offered/BOLD.",
+        "FEATURES": {
+          "interface": "BOLD/Interface design/BOLD allows you to design and customize the BOLD/visual appearance/BOLD of the application or site, structuring BOLD/the layout of elements/BOLD, choosing BOLD/colors, typography, and interactions/BOLD.",
+          "contact": "BOLD/The contact form/BOLD allows users to BOLD/easily send messages/BOLD through the application or site, with an BOLD/automated email sending system/BOLD.",
+          "seo": "BOLD/SEO (Search Engine Optimization)/BOLD involves BOLD/optimizing the application or site/BOLD to improve BOLD/visibility on search engines/BOLD, to attract more visitors BOLD/organically/BOLD."
+        }
+      }
+    },
+    "STEPS": {
+      "auditUX": {
+        "TITLE": "UX Audit",
+        "CONTENT": "Identifies obstacles and solutions to make\nthe user experience smoother and more intuitive"
+      },
+      "code": {
+        "TITLE": "Code Writing",
+        "CONTENT": "Develops features and technical architecture"
+      },
+      "formation": {
+        "TITLE": "User Training",
+        "CONTENT": "Ensures a quick and optimal understanding of\nthe tool by explaining its essential features"
+      },
+      "hosting": {
+        "TITLE": "Hosting",
+        "CONTENT": "Deploys a website or application online\nvia a server in a secure manner"
+      },
+      "reporting": {
+        "TITLE": "Reporting",
+        "CONTENT": "Synthesizes data for decision-making and strategy optimization"
+      },
+      "researchUX": {
+        "TITLE": "UX Research",
+        "CONTENT": "Collects and analyzes data to create an\ninterface tailored to users' real needs"
+      },
+      "seo": {
+        "TITLE": "SEO Optimization",
+        "CONTENT": "Improves the visibility of a website or application\non search engines to attract more visitors"
+      },
+      "setupPrestashop": {
+        "TITLE": "Prestashop Setup",
+        "CONTENT": "Ensures optimal configuration for efficient\ncontent and feature management"
+      },
+      "userTests": {
+        "TITLE": "User Testing",
+        "CONTENT": "Identifies obstacles and areas for improvement\nby observing real user interactions"
+      },
+      "webscrapping": {
+        "TITLE": "Web Scraping",
+        "CONTENT": "Automates online data collection\nfor analysis or integration into a project"
+      },
+      "wireframes": {
+        "TITLE": "Wireframes",
+        "CONTENT": "A key step to anticipate the user experience\nand refine the design before development"
+      }
+    },
+    "TITLE_LIST": ["Context", "Features", "Steps", "Demonstration"],
+    "TYPES": {
+      "crossApp": "Cross-platform application",
+      "e-commerce": "E-commerce website",
+      "mobileApp": "Mobile application",
+      "showcase": "Showcase website",
+      "webApp": "Web application"
+    }
+  }
+}

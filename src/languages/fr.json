@@ -1,0 +1,121 @@
+{
+  "CONTACT": {
+    "EMAIL": "Email *",
+    "REQUIRED_FIELDS": "Veuillez renseigner tous les champs",
+    "MESSAGE": "Message *",
+    "SUJET": "Sujet *",
+    "TITLE": "Contact"
+  },
+
+  "GLOBAL": {
+    "CATEGORIES": {
+      "ABOUT": "A propos",
+      "CONTACT": "Contact",
+      "HOME": "Accueil",
+      "OFFERS": "Offres",
+      "PORTFOLIO": "Portfolio"
+    },
+    "CONTACT": "Nous contacter",
+    "ERROR": { "VIDEO": "Désolé, votre navigateur ne prend pas en charge les vidéos." },
+    "LEGAL": "Mentions Légales",
+    "BUY_CODE": "Acheter un code"
+  },
+
+  "HOME": {
+    "KEY_NUMBER_LIST": [
+      "des expériences en ligne commencent par un moteur de recherche, d’où l’importance du référencement",
+      "des utilisateurs préfèrent visiter le site web d'une entreprise plutôt que ses réseaux sociaux",
+      "des consommateurs effectuent des recherches en ligne avant de réaliser un achat",
+      "Des utilisateurs sont prêts à payer plus pour une meilleure expérience utilisateur",
+      "Du taux de conversion avec une bonne expérience utilisateur",
+      "Chaque dollar investi dans l’UX rapporte entre 2 et 100$",
+      "Des utilisateurs abandonnent leur panier suite à une mauvaise expérience utilisateur",
+      "Des consommateurs jugent la crédibilité d'une entreprise sur la qualité de son site web",
+      "Des consommateurs lisent des avis en ligne avant d'acheter un produit",
+      "Des consommateurs ne font pas confiance à une entreprise qui n'a pas de site web"
+    ],
+
+    "CONCEPT": {
+      "TITLE": "Une aventure immersive au cœur de La Rochelle",
+      "CONTENT": [
+        "Cet escape game grandeur nature se vit en extérieur, à travers les rues de La Rochelle.\nUne expérience hybride, à mi-chemin entre escape game, visite historique et exploration urbaine.",
+        "Oubliez les visites guidées classiques et les escape games enfermés.\nIci, la ville devient le terrain de jeu, l’histoire devient l’intrigue et vous devenez les acteurs du récit.\nÀ travers une application mobile, vous serez amené à résoudre des énigmes, à explorer les rues et les monuments emblématiques de la ville, et à découvrir des histoires fascinantes qui se cachent derrière chaque coin de rue.",
+        "Ici, la ville est le décor, l’histoire est le jeu et vous êtes les acteurs."
+      ]
+    },
+
+    "CIRCUITS": {
+      "TITLE": "Quatre parcours. Quatre époques.",
+      "CONTENT": [
+        "Chaque parcours vous plonge dans une période marquante de l’histoire rochelaise, avec sa propre ambiance, ses enjeux et ses mystères.",
+        "Chaque aventure est indépendante.\nVous pouvez les vivre dans l’ordre… ou suivre votre curiosité."
+      ]
+    },
+
+    "PUBLICS": {
+      "TITLE": "Accessible à tous 24h/24 7j/7, il suffit d’avoir un smartphone.",
+      "CONTENT": [
+        "Que vous soyez un habitant curieux de redécouvrir votre ville, un touriste en quête d’une expérience originale, ou une famille à la recherche d’une activité ludique, vous avez trouvé votre activité du week-end !",
+        "L’application est conçue pour être intuitive et facile à utiliser, avec des énigmes adaptées selon les niveaux de difficulté afin que les enfants puissent participer.\nDes tarifs réduits et partenariats peuvent être proposés pour les groupes scolaires, associations étudiantes, comités d’entreprise, etc.\nN’hésitez pas à nous contacter pour en savoir plus !"
+      ]
+    },
+
+    "PROGRESS": {
+      "EVENT_LIST": [
+        {
+          "TITLE": "Choix du parcours et\ndu nombre de joueurs (2 à 8)"
+        },
+        {
+          "TITLE": "Achat du code d’accès"
+        },
+        {
+          "TITLE": "Téléchargement de l’application"
+        },
+        {
+          "TITLE": "Lancement de l’intrigue sur l’application"
+        },
+        {
+          "TITLE": "Déplacements de lieu en lieu"
+        },
+        {
+          "TITLE": "Résolution d’énigmes liées\nà l'histoire et l’environnement"
+        },
+        {
+          "TITLE": "Fin de parcours"
+        },
+        {
+          "TITLE": "Récupération des résultats"
+        }
+      ],
+      "CONTENT": [
+        "Une fois l’intrigue lancée dans l’application, vous démarrez depuis un point précis de la ville.\nPuis, de lieu en lieu, vous progressez à travers différents points emblématiques, propres à chaque parcours. Chaque lieu vous apporte des informations, des énigmes ou des éléments narratifs qui vous permettent d’avancer dans l’histoire.\nIl n’est jamais nécessaire d’entrer dans les bâtiments : tout se joue à l’extérieur, en observant la ville qui vous entoure.",
+        "Chaque parcours dispose d’un temps imparti, volontairement large, afin de privilégier le plaisir de jeu et la découverte.\nVous pouvez continuer l’aventure même après la fin du temps, pour prendre le temps de visiter, comprendre et profiter pleinement du parcours.\nSelon vos choix et votre progression, vous atteindrez la fin de l’intrigue… avec une issue qui peut varier : victoire ou échec.",
+        "Bon à savoir :\n- Pas besoin de réservation, vous pouvez commencer à tout moment (24h/24 7j/7)\n– Les règles complètes sont accessibles dans l’application\n– Un court tutoriel vous accompagne au début de chaque parcours\n– Une FAQ est aussi disponible pour répondre à toutes vos questions"
+      ]
+    },
+
+    "INTRO": "Découvrez La Rochelle  comme vous ne l’avez jamais vécue,\nà travers des enquêtes immersives mêlant histoire, intrigue et exploration urbaine.\nUne aventure à vivre quand vous voulez, directement sur votre téléphone",
+    "SLOGAN": "Une Ville.\nDes Secrets.\nSerez-vous capable de les percer ?",
+    "TITLES": {
+      "CONCEPT": "Concept",
+      "CIRCUITS": "Parcours",
+      "PUBLICS": "Publics",
+      "PROGRESS": "Déroulement"
+    }
+  },
+
+  "LEGAL": [
+    {
+      "TITLE": "Propriétaire du site",
+      "CONTENT": "Ingenious Code ! / Inès Ciattoni\nAdresse : 70 Avenue de Moutille 33360 Cenac FRANCE\nTéléphone : 07.60.27.45.41\nMail : {mail}"
+    },
+    {
+      "TITLE": "Hébergeur",
+      "CONTENT": "Google Ireland Limited \nAdresse : Gordon House, Barrow Street, Dublin 4, Irlande\nTéléphone : +353 1 543 1000\nSite : https://firebase.google.com"
+    },
+    {
+      "TITLE": "Propriété intellectuelle & Données personnelles",
+      "CONTENT": "Les textes, images, logos et autres contenus présents sur ce site sont protégés et leur reproduction ou utilisation sans autorisation est strictement interdite.\nCe site ne collecte ni ne stocke aucune donnée personnelle des utilisateurs."
+    }
+  ]
+}

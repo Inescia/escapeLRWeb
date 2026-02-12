@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.quicksand-light {
+  font-family: 'Quicksand', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.quicksand {
+  font-family: 'Quicksand', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.quicksand-bold {
+  font-family: 'Quicksand', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rocknroll-one-regular {
+  font-family: 'RocknRoll One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* For html tags */
+@layer base {
+  h1 {
+    @apply text-beige font-medium tracking-widest text-right uppercase text-2xl;
+    line-height: 1.8em !important;
+  }
+
+  h2 {
+    @apply text-xl text-darkBlue font-light tracking-widest my-6 mx-0 text-center capitalize rocknroll-one-regular;
+    @apply md:text-2xl md:text-start;
+  }
+
+  h3 {
+    @apply text-2xl text-beige uppercase tracking-widest my-2 mx-4 text-center;
+  }
+
+  h4 {
+    @apply text-sm text-blue font-medium tracking-widest m-2 text-center whitespace-pre-line;
+  }
+
+  h5 {
+    @apply mx-4 text-white text-base tracking-widest rocknroll-one-regular ;
+  }
+
+  p {
+    @apply tracking-wider quicksand font-thin whitespace-pre-line m-6 text-xs text-darkBlue;
+    @apply md:mx-16 md:text-sm;
+    line-height: 1.7em !important;
+  }
+
+  main {
+    @apply flex-1;
+  }
+}
+
+/* For custom components */
+@layer components {
+  #app {
+    @apply w-full min-h-screen bg-white;
+  }
+
+  .loader {
+    animation: spin 1.2s ease-in-out infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+/* For modes and behaviors (dark, focus, ...) */
+@layer utilities {
+}
