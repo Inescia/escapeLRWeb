@@ -67,10 +67,10 @@
         v-if="isOpen"
         class="bg-darkBlue border-beige border-t-2 cursor-pointer flex flex-col gap-3 py-3 relative w-screen"
       >
-        <div v-for="({ header }, index) in headerList" :key="index">
+        <div v-for="(header, index) in headerList" :key="index">
           <div @click="redirect(header)">
             <span
-              :class="`quicksand-thin mx-4 my-6 text-base tracking-widest ${currentPage === header ? 'text-beige' : 'text-white'}`"
+              :class="`rocknroll-one-regular mx-4 my-6 text-sm tracking-widest ${currentPage === header ? 'text-beige' : 'text-white'}`"
             >
               {{ $t(`HOME.TITLES.${header.toUpperCase()}`) }}
             </span>
@@ -109,17 +109,18 @@ export default defineComponent({
     return {
       headerList: Object.freeze(HEADER_LIST),
       isOpen: false,
+      currentPage: '',
     }
-  },
-
-  computed: {
-    currentPage() {
-      return this.$route.name
-    },
   },
 
   mounted() {
     setTimeout(() => this.onScrollListener(), 0)
+    window.addEventListener('scroll', this.onScrollListener)
+    this.updateCurrentPage()
+  },
+
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.onScrollListener)
   },
 
   methods: {
@@ -127,6 +128,7 @@ export default defineComponent({
      * @method to change the text color and the icon opacity according to the scroll value (callback on scroll listener)
      */
     onScrollListener() {
+      this.updateCurrentPage()
       const height = window.innerHeight
       const margin = 50
       const scroll = window.scrollY
@@ -159,7 +161,7 @@ export default defineComponent({
           color: `rgb(${rgb.join(', ')})`,
         }
 
-        containerRef.style.backgroundColor = `rgba(255, 255, 255, ${value * 0.4})`
+        containerRef.style.backgroundColor = `rgba(255, 255, 255, ${value * 0.2})`
         categoryRefList.forEach((category) => {
           if (category instanceof HTMLElement)
             category.style.color = category.classList.contains('current-page')
@@ -167,7 +169,7 @@ export default defineComponent({
               : values.color
         })
       } else {
-        containerRef.style.backgroundColor = 'rgba(255, 255, 255, 0.7)'
+        containerRef.style.backgroundColor = 'rgba(255, 255, 255, 0.5)'
         categoryRefList.forEach((category) => {
           if (category instanceof HTMLElement)
             category.style.color = category.classList.contains('current-page')
@@ -214,6 +216,21 @@ export default defineComponent({
         lineTop.style.transform = 'rotate(0deg)'
         lineCenter.style.opacity = '1'
         lineBottom.style.transform = 'rotate(0deg)'
+      }
+    },
+
+    /**
+     * @method to update current page based on scroll position
+     */
+    updateCurrentPage() {
+      for (const header of ['hero', ...this.headerList]) {
+        const element = document.getElementById(header)
+        if (element) {
+          const rect = element.getBoundingClientRect()
+          if (rect.top <= window.innerHeight / 4) {
+            this.currentPage = header
+          }
+        }
       }
     },
   },

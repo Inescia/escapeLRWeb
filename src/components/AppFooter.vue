@@ -13,18 +13,19 @@
       </a>
     </div>
     <div
-      class="flex flex-2 flex-col gap-2 items-center justify-center md:flex-row md:gap-4 md:text-white text-beige text-sm"
+      class="flex flex-2 flex-col gap-2 justify-center md:flex-row md:gap-4 md:text-white text-beige text-sm"
     >
-      <a href="https://www.instagram.com/ingenious.code.tech/" target="_blank">
-        <font-awesome-icon
-          :icon="['fab', 'instagram']"
-          class="cursor-pointer h-5 hover:md:text-beige"
-        />
-        {{ insta }}
-      </a>
       <a href="mailto:ingenious.code.tech@gmail.com" class="hover:cursor-pointer hover:text-beige">
-        <font-awesome-icon :icon="['far', 'envelope']" class="h-4 mr-2" />
+        <FontAwesomeIcon :icon="faEnvelope" class="h-4 mr-1" />
         {{ mail }}
+      </a>
+      <a
+        href="https://www.instagram.com/ingenious.code.tech/"
+        target="_blank"
+        class="hover:cursor-pointer hover:text-beige"
+      >
+        <FontAwesomeIcon :icon="faInstagram" class="h-4 mr-1" />
+        {{ insta }}
       </a>
     </div>
     <div
@@ -37,12 +38,19 @@
 </template>
 
 <script>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+
 export default {
   name: 'AppFooter',
+  components: { FontAwesomeIcon },
   data() {
     return {
       mail: 'ingenious.code.tech@gmail.com',
       insta: '@EscapeLR',
+      faInstagram,
+      faEnvelope,
     }
   },
 }

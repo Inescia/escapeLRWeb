@@ -1,6 +1,6 @@
 <template>
   <button
-    class="bg-darkBlue border-2 border-whiter group hover:border-beige hover:animate-bounce m-2 px-6 py-1 rounded-full w-fit"
+    class="bg-darkBlue border-2 border-whiter group hover:border-beige hover:animate-bounce m-2 px-6 pt-1.5 pb-2 rounded-full w-fit"
   >
     <div
       v-if="isLoading"

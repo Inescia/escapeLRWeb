@@ -54,7 +54,7 @@
   }
 
   p {
-    @apply tracking-wider quicksand font-thin whitespace-pre-line m-6 text-xs text-darkBlue;
+    @apply tracking-wider quicksand-light whitespace-pre-line m-6 text-xs text-darkBlue text-center;
     @apply md:mx-16 md:text-sm;
     line-height: 1.7em !important;
   }

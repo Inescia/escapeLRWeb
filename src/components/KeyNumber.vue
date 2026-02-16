@@ -1,9 +1,9 @@
 <template>
-  <div class="flex flex-col mt-4">
-    <h4 class="text-blue">
+  <div class="flex flex-col bg-lightBlue bg-opacity-20 mx-3 my-2 pt-1 pb-2 rounded-lg">
+    <h2 class="text-blue text-center mb-4">
       {{ label }}
-    </h4>
-    <p class="mb-4 mt-0 mx-6 text-center word-break">
+    </h2>
+    <p class="mb-4 mt-0 mx-6 text-base text-darkBlue quicksand word-break">
       {{ text }}
     </p>
   </div>

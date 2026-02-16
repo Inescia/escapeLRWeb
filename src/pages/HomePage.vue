@@ -10,21 +10,19 @@
         ref="mockup2"
         source="mockup2.png"
         text="Iphone mockup"
-        class="h-2/3 right-[10%] bottom-[5%] absolute"
+        class="md:h-2/3 h-1/2 right-[10%] md:bottom-[5%] bottom-[15%] absolute"
       />
       <AppImage
         ref="mockup1"
         source="mockup1.png"
         text="Iphone mockup"
-        class="h-2/3 right-[23%] bottom-[10%] absolute"
+        class="md:h-2/3 h-1/2 right-[23%] md:bottom-[10%] bottom-[20%] absolute"
       />
       <!-- SLOGAN -->
       <div ref="bg" class="duration-2000 opacity-0 transition-opacity">
-        <div
-          class="absolute flex flex-col gap-2 md:left-12 md:text-left md:bottom-16 text-center bottom-[15%]"
-        >
+        <div class="absolute md:left-12 left-3 text-left md:bottom-16 bottom-10">
           <span
-            class="md:ml-8 mt-3 mx-1 rocknroll-one-regular text-white text-3xl tracking-widest whitespace-pre-line"
+            class="mt-3 rocknroll-one-regular text-white md:text-3xl tracking-widest whitespace-pre-line"
           >
             {{ $t('HOME.SLOGAN') }}
           </span>
@@ -34,12 +32,12 @@
 
     <div class="flex flex-col gap-10 items-center mt-8 mb-4">
       <!-- INTRO -->
-      <section>
-        <p class="text-center text-lg">{{ $t('HOME.INTRO') }}</p>
-        <div class="flex-row hidden lg:flex mt-4 mx-10">
+      <section id="hero">
+        <p class="md:text-lg text-base">{{ $t('HOME.INTRO') }}</p>
+        <div class="flex flex-col md:flex-row justify-around lg:flex mt-4 mx-10">
           <KeyNumber
             ref="keyNumber"
-            v-for="{ appendOperator, prependOperator, value, index } in keyNumberList"
+            v-for="({ appendOperator, prependOperator, value }, index) in keyNumberList"
             :key="value"
             :append-operator="appendOperator"
             :prepend-operator="prependOperator"
@@ -52,10 +50,10 @@
       <!-- CONCEPT -->
       <section id="concept">
         <SectionTitle :label="$t('HOME.TITLES.CONCEPT')" />
-        <p class="text-center text-bold text-base">
+        <p class="text-bold text-base">
           {{ $t('HOME.CONCEPT.TITLE') }}
         </p>
-        <p class="text-center">{{ $t('HOME.CONCEPT.CONTENT[0]') }}</p>
+        <p>{{ $t('HOME.CONCEPT.CONTENT[0]') }}</p>
         <div class="flex gap-1 justify-center lg:gap-12 my-4 w-screen">
           <div
             v-for="image in stampList"
@@ -65,13 +63,13 @@
             <AppImage :source="`${image}.png`" :text="`Stamp ${image}`" class="rounded-full" />
           </div>
         </div>
-        <p class="text-center">{{ $t('HOME.CONCEPT.CONTENT[1]') }}</p>
+        <p>{{ $t('HOME.CONCEPT.CONTENT[1]') }}</p>
         <AppImage
           source="tableau.png"
           text="Tableau comparatif"
-          class="mx-auto mt-12 mb-6 h-[280px]"
+          class="mx-auto md:mt-12 md:mb-6 my-0 h-[280px] object-contain"
         />
-        <p class="text-center text-bold text-lg">{{ $t('HOME.CONCEPT.CONTENT[2]') }}</p>
+        <p class="text-bold text-lg">{{ $t('HOME.CONCEPT.CONTENT[2]') }}</p>
       </section>
 
       <!-- DEROULEMENT -->
@@ -82,43 +80,42 @@
           :event-list="eventList"
           class="mb-8 md:-mb-[220px] mt-16 m-auto pointer-events-none"
         />
-        <p class="text-center">{{ $t('HOME.PROGRESS.CONTENT[0]') }}</p>
-        <p class="text-center">{{ $t('HOME.PROGRESS.CONTENT[1]') }}</p>
-        <div class="flex w-5/6 mx-auto gap-10 my-12">
+        <p>{{ $t('HOME.PROGRESS.CONTENT[0]') }}</p>
+        <p>{{ $t('HOME.PROGRESS.CONTENT[1]') }}</p>
+        <div class="flex w-full px-[10%] gap-10 my-12 md:overflow-auto overflow-scroll">
           <AppImage
             v-for="value in 5"
             :key="value"
             ref="mockup"
             :source="`mockup${2 + value}.png`"
             text="Iphone mockup"
-            class="h-2/3 overflow-hidden scale-y-1 transition-transform duration-2000"
+            class="md:h-2/3 h-96 md:overflow-hidden"
           />
         </div>
-        <p class="text-center text-bold">{{ $t('HOME.PROGRESS.CONTENT[2]') }}</p>
+        <p class="text-bold">{{ $t('HOME.PROGRESS.CONTENT[2]') }}</p>
+        <p>{{ $t('HOME.PROGRESS.CONTENT[3]') }}</p>
       </section>
 
       <!-- PARCOURS -->
       <section id="circuits">
         <SectionTitle :label="$t('HOME.TITLES.CIRCUITS')" />
-        <p class="text-center text-bold text-base">
+        <p class="text-bold text-base">
           {{ $t('HOME.CIRCUITS.TITLE') }}
         </p>
-        <p class="text-center">{{ $t('HOME.CIRCUITS.CONTENT[0]') }}</p>
+        <p>{{ $t('HOME.CIRCUITS.CONTENT[0]') }}</p>
         <div class="flex flex-col items-center">
           <Carousel
             :autoplay="5000"
             :transition="1200"
             class="my-6 w-screen"
-            height="450px"
             pause-autoplay-on-hover
             wrap-around
           >
-            <Slide v-for="circuit in ['tours', 'richelieu', 'esclavage', 'nazis']" :key="circuit">
-              <!--  <AppImage
-                :source="`parcours-${circuit}.png`"
-                :text="`Circuit ${circuit}`"
-                class="object-contain"
-              />-->
+            <Slide
+              v-for="circuit in ['tours', 'richelieu', 'esclavage', 'nazis']"
+              :key="circuit"
+              class="md:h-[480px] h-90vh"
+            >
               <CircuitCard :circuit="circuit" />
             </Slide>
             <template #addons>
@@ -127,44 +124,69 @@
             </template>
           </Carousel>
         </div>
-        <p class="text-center">{{ $t('HOME.CIRCUITS.CONTENT[1]') }}</p>
+        <p>{{ $t('HOME.CIRCUITS.CONTENT[1]') }}</p>
       </section>
 
       <!-- PUBLICS -->
       <section id="publics">
         <SectionTitle :label="$t('HOME.TITLES.PUBLICS')" />
-        <p class="text-center text-bold text-base">
-          {{ $t('HOME.PUBLICS.TITLE') }}
-        </p>
-        <p class="text-center">{{ $t('HOME.PUBLICS.CONTENT[0]') }}</p>
-        <p class="text-center">{{ $t('HOME.PUBLICS.CONTENT[1]') }}</p>
+        <div class="flex flex-col items-center">
+          <p class="text-bold text-base">
+            {{ $t('HOME.PUBLICS.TITLE') }}
+          </p>
+          <p>{{ $t('HOME.PUBLICS.CONTENT[0]') }}</p>
+          <div class="flex justify-center flex-col md:flex-row md:gap-16 gap-10 my-2">
+            <div class="flex flex-col justify-between items-center gap-2">
+              <img src="../assets/icons/touriste.png" alt="Duration icon" class="w-24" />
+              <span class="text-blue quicksand-bold text-lg">{{ $t('HOME.PUBLICS.LIST[0]') }}</span>
+            </div>
+            <div class="flex flex-col justify-between items-center gap-2">
+              <img src="../assets/icons/famille.png" alt="Distance icon" class="w-24" />
+              <span class="text-blue quicksand-bold text-lg">{{ $t('HOME.PUBLICS.LIST[1]') }}</span>
+            </div>
+            <div class="flex flex-col justify-between items-center gap-2">
+              <img src="../assets/icons/amis.png" alt="Level icon" class="w-24" />
+              <span class="text-blue quicksand-bold text-lg">{{ $t('HOME.PUBLICS.LIST[2]') }}</span>
+            </div>
+            <div class="flex flex-col justify-between items-center gap-2">
+              <img src="../assets/icons/habitants.png" alt="Level icon" class="w-24" />
+              <span class="text-blue quicksand-bold text-lg">{{ $t('HOME.PUBLICS.LIST[3]') }}</span>
+            </div>
+            <div class="flex flex-col justify-between items-center gap-2">
+              <img src="../assets/icons/scolaires.png" alt="Level icon" class="w-24" />
+              <span class="text-blue quicksand-bold text-lg">{{ $t('HOME.PUBLICS.LIST[4]') }}</span>
+            </div>
+          </div>
+          <p>{{ $t('HOME.PUBLICS.CONTENT[1]') }}</p>
 
-        <div
-          class="bg-lightBlue bg-opacity-50 bottom-8 md:bottom-10 md:py-2 my-12 h-24 overflow-hidden py-0 w-screen"
-        >
-          <swiper-container
-            :slides-per-view="10"
-            :autoplay="{ delay: 0, disableOnInteraction: false }"
-            :freeMode="true"
-            :freeModeMomentum="false"
-            :loop="true"
-            speed="2000"
-            style="transition-timing-function: linear"
+          <div
+            class="bg-lightBlue bg-opacity-50 bottom-8 md:bottom-10 md:py-2 my-8 h-24 overflow-hidden py-0 w-screen"
           >
-            <swiper-slide v-for="image in skillList" :key="image">
-              <div class="flex flex-col items-center">
-                <AppImage
-                  :source="`partnerns/${image}.png`"
-                  :text="`Icon partnern ${image}`"
-                  class="h-20 object-contain"
-                />
-                <span
-                  class="font-bold hidden md:block mt-2 text-white text-xs tracking-widest whitespace-nowrap"
-                  >{{ image }}</span
-                >
-              </div>
-            </swiper-slide>
-          </swiper-container>
+            <swiper-container
+              :slides-per-view="10"
+              :autoplay="{ delay: 0, disableOnInteraction: false }"
+              :freeMode="true"
+              :freeModeMomentum="false"
+              :loop="true"
+              speed="2000"
+              style="transition-timing-function: linear"
+            >
+              <swiper-slide v-for="image in skillList" :key="image">
+                <div class="flex flex-col items-center">
+                  <AppImage
+                    :source="`partnerns/${image}.png`"
+                    :text="`Icon partnern ${image}`"
+                    class="h-20 object-contain"
+                  />
+                  <span
+                    class="font-bold hidden md:block mt-2 text-white text-xs tracking-widest whitespace-nowrap"
+                    >{{ image }}</span
+                  >
+                </div>
+              </swiper-slide>
+            </swiper-container>
+          </div>
+          <AppButton :label="$t('GLOBAL.CONTACT')" class="mb-6" />
         </div>
       </section>
     </div>
@@ -182,11 +204,13 @@ import { EVENT_LIST, KEY_NUMBER_LIST, STAMP_LIST } from '@/data/global'
 import { formatImageUrl } from '@/data/helpers'
 import TimeLine from '@/components/TimeLine.vue'
 import CircuitCard from '@/components/CircuitCard.vue'
+import AppButton from '@/components/AppButton.vue'
 
 export default {
   name: 'HomePage',
   components: {
     CircuitCard,
+    AppButton,
     AppImage,
     Carousel,
     KeyNumber,
@@ -260,24 +284,25 @@ export default {
 
 <style lang="scss">
 @use '../theme/colors.scss' as colors;
+@use 'sass:map';
 
 .carousel__next,
 .carousel__prev {
-  color: map-get(colors.$colors, 'lightBlue');
+  color: map.get(colors.$colors, 'lightBlue');
 }
 
 .carousel__next:hover,
 .carousel__prev:hover {
-  color: map-get(colors.$colors, 'beige');
+  color: map.get(colors.$colors, 'beige');
 }
 
 .carousel__pagination-button {
   height: 7px;
   width: 7px;
   border-radius: 5px;
-  background-color: map-get(colors.$colors, 'lightBlue');
+  background-color: map.get(colors.$colors, 'lightBlue');
 }
 .carousel__pagination-button--active {
-  background-color: map-get(colors.$colors, 'beige');
+  background-color: map.get(colors.$colors, 'beige');
 }
 </style>
