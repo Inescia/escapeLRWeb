@@ -24,7 +24,7 @@
           />
         </div>
       </div>
-      <!-- Language -->
+      <!-- Language
       <img
         v-if="$i18n.locale === 'fr'"
         alt="french flag"
@@ -38,7 +38,7 @@
         src="../assets/icons/en.png"
         class="cursor-pointer size-6 mt-4 mx-2 self-center"
         @click="toggleLangage"
-      />
+      />-->
     </div>
   </nav>
 
@@ -77,7 +77,7 @@
           </div>
         </div>
 
-        <!-- Language -->
+        <!-- Language
         <div class="absolute flex gap-4 right-4 top-4">
           <img
             v-if="$i18n.locale === 'fr'"
@@ -93,7 +93,7 @@
             class="h-5"
             @click="toggleLangage"
           />
-        </div>
+        </div> -->
       </div>
     </transition>
   </nav>

@@ -36,6 +36,7 @@
       <AppButton
         :label="$t('GLOBAL.BUY_CODE')"
         class="absolute md:bottom-6 bottom-4 md:right-6 right-2"
+        @click="goToStripe"
       />
     </div>
   </div>
@@ -43,8 +44,8 @@
 
 <script>
 import { defineComponent } from 'vue'
-import AppButton from '@/components/AppButton.vue'
 import { CIRCUITS } from '@/data/circuits.js'
+import AppButton from '@/components/AppButton.vue'
 import tours from '../assets/circuits/parcours-tours.png'
 import richelieu from '../assets/circuits/parcours-richelieu.png'
 import esclavage from '../assets/circuits/parcours-esclavage.png'
@@ -70,6 +71,11 @@ export default defineComponent({
   computed: {
     circuitData() {
       return this.circuits[this.circuit]
+    },
+  },
+  methods: {
+    goToStripe() {
+      window.open(this.circuitData.stripeLink, '_blank')
     },
   },
 })
