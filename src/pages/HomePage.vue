@@ -80,20 +80,24 @@
           :event-list="eventList"
           class="mb-8 md:-mb-[220px] mt-16 m-auto pointer-events-none"
         />
-        <p>{{ $t('HOME.PROGRESS.CONTENT[0]') }}</p>
+        <p class="text-bold">{{ $t('HOME.PROGRESS.CONTENT[0]') }}</p>
         <p>{{ $t('HOME.PROGRESS.CONTENT[1]') }}</p>
-        <div class="flex w-full px-[10%] gap-10 my-12 md:overflow-auto overflow-scroll">
+        <p class="text-bold">{{ $t('HOME.PROGRESS.CONTENT[2]') }}</p>
+        <p>{{ $t('HOME.PROGRESS.CONTENT[3]') }}</p>
+        <div class="flex w-full px-[10%] gap-8 my-12 md:overflow-auto overflow-scroll">
           <AppImage
             v-for="value in 5"
             :key="value"
             ref="mockup"
             :source="`mockup${2 + value}.png`"
             text="Iphone mockup"
-            class="md:h-2/3 h-96 md:overflow-hidden"
+            class="md:h-2/3 h-[400px] md:overflow-hidden hover:scale-100 duration-300 scale-90"
           />
         </div>
-        <p class="text-bold">{{ $t('HOME.PROGRESS.CONTENT[2]') }}</p>
-        <p>{{ $t('HOME.PROGRESS.CONTENT[3]') }}</p>
+        <p>{{ $t('HOME.PROGRESS.CONTENT[4]') }}</p>
+        <p>{{ $t('HOME.PROGRESS.CONTENT[5]') }}</p>
+        <p class="text-bold">{{ $t('HOME.PROGRESS.CONTENT[6]') }}</p>
+        <p>{{ $t('HOME.PROGRESS.CONTENT[7]') }}</p>
       </section>
 
       <!-- PARCOURS -->
@@ -114,7 +118,7 @@
             <Slide
               v-for="circuit in ['tours', 'richelieu', 'esclavage', 'nazis']"
               :key="circuit"
-              class="md:h-[480px] h-90vh"
+              class="md:h-[500px] h-90vh"
             >
               <CircuitCard :circuit="circuit" />
             </Slide>
@@ -186,7 +190,7 @@
               </swiper-slide>
             </swiper-container>
           </div>
-          <AppButton :label="$t('GLOBAL.CONTACT')" class="mb-6" />
+          <AppButton :label="$t('GLOBAL.CONTACT')" class="mb-6" @click="openEmail()" />
         </div>
       </section>
     </div>
@@ -259,6 +263,10 @@ export default {
       if (index == 10) return
       const item = this.$refs[`keyNumber${index}`][0]
       item.animate()
+    },
+
+    openEmail() {
+      window.location.href = 'mailto:ingenious.code.tech@gmail.com'
     },
 
     /**

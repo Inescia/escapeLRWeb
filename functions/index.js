@@ -1,13 +1,24 @@
-/* eslint-disable no-unused-vars */
 import admin from 'firebase-admin'
 import { https } from 'firebase-functions'
 import { defineString } from 'firebase-functions/params'
 import Stripe from 'stripe'
+import nodemailer from 'nodemailer'
 
 admin.initializeApp()
 const db = admin.firestore()
 const STRIPE_SECRET = defineString('STRIPE_SECRET')
 const STRIPE_WEBHOOK_SECRET = defineString('STRIPE_WEBHOOK_SECRET')
+
+let transporter = nodemailer.createTransport({
+  service: 'gmail',
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true,
+  auth: {
+    user: 'ingenious.code.tech@gmail.com',
+    pass: 'rncabyccctxsixfu',
+  },
+})
 
 export const stripeWebhook = https.onRequest(async (req, res) => {
   const stripe = new Stripe(STRIPE_SECRET.value(), { apiVersion: '2023-10-16' })
@@ -23,15 +34,9 @@ export const stripeWebhook = https.onRequest(async (req, res) => {
 
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object
-    console.log('event:', session)
-
     const mail = session.customer_details?.email || session.customer_email || null
-    const parcoursName = session.metadata?.parcoursName || 'Inconnu'
+    const parcoursName = session.metadata?.parcoursName || 'tours'
     const code = _generateCode()
-
-    console.log('mail', mail)
-    console.log('parcoursName', parcoursName)
-    console.log('code', code)
 
     await db.collection('Codes').doc(code).set({
       id: code,
@@ -41,6 +46,7 @@ export const stripeWebhook = https.onRequest(async (req, res) => {
       status: 'ready',
     })
     console.log(`Code généré pour ${mail}: ${code}`)
+    _sendMail(mail, code, parcoursName)
   }
 
   res.sendStatus(200)
@@ -57,40 +63,25 @@ function _generateCode(length = 8) {
   return result.match(/.{1,4}/g).join('-')
 }
 
-/*import { Resend } from "resend";
+function _sendMail(mail, code, parcoursName) {
+  const LABELS = {
+    tours: "Dans l'Ombre des Tours",
+    richelieu: 'Les Secrets de Richelieu',
+    esclavage: "L'Héritage Colonial",
+    nazis: 'Le Code des Résistants',
+  }
 
-const resendKey = defineSecret("RESEND_API_KEY");
-
-export const stripeWebhook = functions.https.onRequest(
-  { secrets: [resendKey] },
-  async (req, res) => {
-    const resend = new Resend(resendKey.value());
-
-    // ... validation Stripe ...
-
-    if (event.type === "checkout.session.completed") {
-      const session = event.data.object as Stripe.Checkout.Session;
-
-      const email = session.customer_email!;
-      const code = generateCode();
-
-      await db.collection("Codes").add({
-        code,
-        email,
-        createdAt: admin.firestore.FieldValue.serverTimestamp(),
-      });
-
-      // ✉️ ENVOI DU MAIL
-      await resend.emails.send({
-        from: "Escape La Rochelle <contact@tondomaine.fr>",
-        to: email,
-        subject: "Votre code d'accès à l'aventure 🔐",
-        html: `
-          <h2>Votre aventure commence maintenant.</h2>
+  const mailOptions = {
+    from: 'Escape LR ⚓️<ingenious.code.tech@gmail.com>',
+    to: mail,
+    subject: "Votre code d'accès 🔐",
+    html: `
+          <img src="cid:logo" alt="Logo" style="width:auto; margin-bottom:20px;" />
+          <h2>Votre aventure peut commencer dès maintenant !</h2>
 
           <p>Merci pour votre achat 🎉</p>
 
-          <p>Voici votre code d'accès :</p>
+          <p>Voici votre code d'accès pour le parcours “${LABELS[parcoursName] || parcoursName}“ :</p>
 
           <div style="
             font-size:24px;
@@ -101,14 +92,21 @@ export const stripeWebhook = functions.https.onRequest(
             ${code}
           </div>
 
-          <p>Téléchargez l'application puis entrez ce code pour commencer.</p>
+          <p>Téléchargez l'application mobile Escape LR 📱 puis entrez ce code pour commencer.</p></br>
 
-          <p>À très vite dans les rues de La Rochelle…</p>
+          <p>À très vite dans les rues de La Rochelle ⚓️</p>
         `,
-      });
-    }
-
-    res.sendStatus(200);
+    attachments: [
+      {
+        filename: 'logo.png',
+        path: './assets/logo.png',
+        cid: 'logo',
+      },
+    ],
   }
-);
-*/
+  return transporter.sendMail(mailOptions, (erro, info) => {
+    console.log(erro, info)
+    if (erro) return console.error(erro.toString())
+    return 'Sended'
+  })
+}

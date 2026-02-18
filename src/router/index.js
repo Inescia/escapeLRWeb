@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../pages/HomePage.vue'
 import LegalPage from '@/pages/LegalPage.vue'
-import CircuitPage from '@/pages/CircuitPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,11 +14,6 @@ const router = createRouter({
       path: '/legal',
       name: 'legal',
       component: LegalPage,
-    },
-    {
-      path: '/circuit/:id',
-      name: 'circuit',
-      component: CircuitPage,
     },
   ],
   scrollBehavior(to) {

@@ -63,6 +63,6 @@ const KEY_NUMBER_LIST = [
 
 const PARTNERN_LIST = []
 
-const STAMP_LIST = ['nature', 'histoire', 'visite', 'mobile']
+const STAMP_LIST = ['nature', 'histoire', 'visite', 'cooperatif', 'mobile']
 
 export { EVENT_LIST, HEADER_LIST, KEY_NUMBER_LIST, PARTNERN_LIST, STAMP_LIST }
