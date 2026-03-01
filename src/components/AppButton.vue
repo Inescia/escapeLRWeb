@@ -1,6 +1,9 @@
 <template>
   <button
-    class="bg-darkBlue border-2 border-whiter group hover:border-beige hover:animate-bounce m-2 px-6 pt-1.5 pb-2 rounded-full w-fit"
+    :class="[
+      'bg-darkBlue border-2 border-whiter group hover:border-beige m-2 px-6 pt-1.5 pb-2 rounded-full w-fit',
+      isAnimated ? 'hover:animate-bounce' : '',
+    ]"
   >
     <div
       v-if="isLoading"
@@ -8,7 +11,10 @@
     />
     <span
       v-else
-      class="rocknroll-one-regular font-light group-hover:text-beige text-xs text-white tracking-widest uppercase"
+      :class="[
+        'rocknroll-one-regular font-light group-hover:text-beige  text-white tracking-widest uppercase',
+        isAnimated ? 'text-xs' : 'text-base',
+      ]"
     >
       {{ label }}
     </span>
@@ -24,6 +30,10 @@ export default defineComponent({
     isLoading: {
       type: Boolean,
       default: false,
+    },
+    isAnimated: {
+      type: Boolean,
+      default: true,
     },
     label: {
       type: String,

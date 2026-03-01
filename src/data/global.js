@@ -40,15 +40,9 @@ const EVENT_LIST = [
     title: 'HOME.PROGRESS.EVENT_LIST[6].TITLE',
   },
   {
-    position: 78,
+    position: 82,
     size: 'medium',
     title: 'HOME.PROGRESS.EVENT_LIST[7].TITLE',
-  },
-  {
-    mobileOffSet: 5,
-    position: 84,
-    size: 'small',
-    title: 'HOME.PROGRESS.EVENT_LIST[8].TITLE',
   },
 ]
 
@@ -56,8 +50,8 @@ const HEADER_LIST = ['concept', 'progress', 'circuits', 'publics']
 
 const KEY_NUMBER_LIST = [
   { appendOperator: ' 🏛️', value: 4 },
-  { prependOperator: '+', appendOperator: '% 🎡', value: 35 },
-  { prependOperator: '+', appendOperator: '% 🔎', value: 100 },
+  { prependOperator: '+', appendOperator: '🎡', value: 35 },
+  { prependOperator: '+', appendOperator: '🔎', value: 100 },
   { prependOperator: '+', appendOperator: '% 🏆', value: 95 },
 ]
 

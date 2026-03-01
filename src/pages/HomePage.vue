@@ -18,6 +18,18 @@
         text="Iphone mockup"
         class="md:h-2/3 h-1/2 right-[23%] md:bottom-[10%] bottom-[20%] absolute"
       />
+      <div class="absolute top-[40%] left-[25%]">
+        <AppButton
+          :is-animated="false"
+          :label="$t('GLOBAL.BEGIN')"
+          @click="$router.push({ path: '/', hash: `#circuits` })"
+        />
+        <img
+          src="../assets/icons/arrow.png"
+          alt="Arrow icon"
+          class="animate-bounce w-2 md:w-10 mt-4 mx-auto object-contain"
+        />
+      </div>
       <!-- SLOGAN -->
       <div ref="bg" class="duration-2000 opacity-0 transition-opacity">
         <div class="absolute md:left-12 left-3 text-left md:bottom-16 bottom-10">
@@ -258,12 +270,6 @@ export default {
 
   methods: {
     formatImageUrl,
-
-    animateKeyNumber(index) {
-      if (index == 10) return
-      const item = this.$refs[`keyNumber${index}`][0]
-      item.animate()
-    },
 
     openEmail() {
       window.location.href = 'mailto:ingenious.code.tech@gmail.com'

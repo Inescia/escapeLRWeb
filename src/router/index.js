@@ -21,10 +21,10 @@ const router = createRouter({
       const element = document.querySelector(to.hash)
       if (element) {
         const top = element.getBoundingClientRect().top + window.scrollY - 80
-        return { left: 0, top: top }
+        return { left: 0, top: top, behavior: 'smooth' }
       }
     }
-    return { top: 0 }
+    return { top: 0, behavior: 'smooth' }
   },
 })
 

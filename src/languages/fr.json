@@ -19,6 +19,7 @@
   },
 
   "GLOBAL": {
+    "BEGIN": "Commencer l’aventure",
     "CONTACT": "Nous contacter",
     "ERROR": { "VIDEO": "Désolé, votre navigateur ne prend pas en charge les vidéos 🎬." },
     "LEGAL": "Mentions Légales 📜",
@@ -70,8 +71,7 @@
         { "TITLE": "Exploration de lieu en lieu 🏙️" },
         { "TITLE": "Résolution d’énigmes 🔑" },
         { "TITLE": "Fin de parcours 🎉" },
-        { "TITLE": "Découverte de votre résultat 🏆" },
-        { "TITLE": "Partage sur les réseaux 🎁" }
+        { "TITLE": "Découverte de votre résultat 🏆" }
       ],
       "CONTENT": [
         "🎟️ Lors de l’achat d’un code, la quantité choisie correspond au nombre de joueurs.",
