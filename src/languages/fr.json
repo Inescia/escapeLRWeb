@@ -23,7 +23,7 @@
     "CONTACT": "Nous contacter",
     "ERROR": { "VIDEO": "Désolé, votre navigateur ne prend pas en charge les vidéos 🎬." },
     "LEGAL": "Mentions Légales 📜",
-    "BUY_CODE": "Obtenir votre code"
+    "BUY_CODE": "Acheter code"
   },
 
   "HOME": {
@@ -44,10 +44,17 @@
     },
 
     "CIRCUITS": {
-      "TITLE": "Quatre parcours. Quatre époques. 🏛️",
+      "TITLE": [
+        "Quatre parcours. Quatre époques. 🏛️",
+        "Un code, une équipe, une mission 🔐",
+        "🏁 Vous êtes plus de 6 joueurs ou vous avez envie de vous challenger ?"
+      ],
       "CONTENT": [
         "Chaque parcours vous plonge dans une période marquante de l’histoire rochelaise, avec son ambiance propre, ses énigmes et ses secrets 🎭.",
-        "Vous pouvez choisir votre aventure selon votre curiosité et vos envies, ou tous les vivre pour une immersion totale."
+        "Vous pouvez choisir votre aventure selon votre curiosité et vos envies, ou tous les vivre pour une immersion totale.",
+        "Pour participer à l’aventure, vous achetez un code unique valable pour toute votre équipe.\nLorsque vous cliquez sur le lien d’achat, la quantité demandée correspond simplement au nombre de participants dans votre équipe (entre 2 et 6 joueurs).\nLes prix indiqués sont par personne, mais vous achetez un code d’accès pour toute votre équipe. C’est simple et pratique !",
+        "Pourquoi est-ce important ⚖️ ?\nLe parcours adapte certains éléments de jeu au nombre de joueurs afin de garantir : un rythme équilibré, une difficulté adaptée, une expérience agréable pour tous.\n👉 Indiquer le nombre réel de participants permet de vivre l’aventure dans les meilleures conditions.",
+        "Vous pouvez tout à fait acheter plusieurs codes afin de créer plusieurs équipes !\nCela permet de jouer en simultané, sur le même parcours, et même d’organiser une petite compétition entre vous 🏆\nQui résoudra les énigmes le plus vite ? Qui fera le moins d’erreurs ? À vous d’orchestrer la bataille…"
       ]
     },
 

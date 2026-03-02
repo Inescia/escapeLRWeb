@@ -10,29 +10,32 @@
         ref="mockup2"
         source="mockup2.png"
         text="Iphone mockup"
-        class="md:h-2/3 h-1/2 right-[10%] md:bottom-[5%] bottom-[15%] absolute"
+        class="md:h-2/3 h-1/2 right-[10%] md:bottom-[5%] bottom-[25%] absolute"
       />
       <AppImage
         ref="mockup1"
         source="mockup1.png"
         text="Iphone mockup"
-        class="md:h-2/3 h-1/2 right-[23%] md:bottom-[10%] bottom-[20%] absolute"
+        class="md:h-2/3 h-1/2 right-[23%] md:bottom-[10%] bottom-[30%] absolute"
       />
-      <div class="absolute top-[40%] left-[25%]">
+      <div
+        class="absolute md:top-[40%] md:left-[25%] md:w-fit bottom-4 flex flex-col items-center md:gap-8 gap-2 w-full"
+      >
         <AppButton
           :is-animated="false"
+          :is-big="true"
           :label="$t('GLOBAL.BEGIN')"
           @click="$router.push({ path: '/', hash: `#circuits` })"
         />
         <img
           src="../assets/icons/arrow.png"
           alt="Arrow icon"
-          class="animate-bounce w-2 md:w-10 mt-4 mx-auto object-contain"
+          class="animate-bounce md:w-10 w-6 mx-auto object-contain"
         />
       </div>
       <!-- SLOGAN -->
       <div ref="bg" class="duration-2000 opacity-0 transition-opacity">
-        <div class="absolute md:left-12 left-3 text-left md:bottom-16 bottom-10">
+        <div class="absolute md:left-12 left-3 text-left md:bottom-16 bottom-32">
           <span
             class="mt-3 rocknroll-one-regular text-white md:text-3xl tracking-widest whitespace-pre-line"
           >
@@ -116,7 +119,7 @@
       <section id="circuits">
         <SectionTitle :label="$t('HOME.TITLES.CIRCUITS')" />
         <p class="text-bold text-base">
-          {{ $t('HOME.CIRCUITS.TITLE') }}
+          {{ $t('HOME.CIRCUITS.TITLE[0]') }}
         </p>
         <p>{{ $t('HOME.CIRCUITS.CONTENT[0]') }}</p>
         <div class="flex flex-col items-center">
@@ -139,8 +142,16 @@
               <Pagination class="-bottom-4" />
             </template>
           </Carousel>
+          <div class="flex flex-wrap gap-12 my-4 justify-center">
+            <Card v-for="circuit in circuitList" :key="circuit" :circuit="circuit" />
+          </div>
         </div>
         <p>{{ $t('HOME.CIRCUITS.CONTENT[1]') }}</p>
+        <p class="text-bold text-base">{{ $t('HOME.CIRCUITS.TITLE[1]') }}</p>
+        <p>{{ $t('HOME.CIRCUITS.CONTENT[2]') }}</p>
+        <p>{{ $t('HOME.CIRCUITS.CONTENT[3]') }}</p>
+        <p class="text-bold text-base">{{ $t('HOME.CIRCUITS.TITLE[2]') }}</p>
+        <p>{{ $t('HOME.CIRCUITS.CONTENT[4]') }}</p>
       </section>
 
       <!-- PUBLICS -->
@@ -220,12 +231,15 @@ import { EVENT_LIST, KEY_NUMBER_LIST, STAMP_LIST } from '@/data/global'
 import { formatImageUrl } from '@/data/helpers'
 import TimeLine from '@/components/TimeLine.vue'
 import CircuitCard from '@/components/CircuitCard.vue'
+import Card from '@/components/Card.vue'
 import AppButton from '@/components/AppButton.vue'
+import { CIRCUITS } from '@/data/circuits'
 
 export default {
   name: 'HomePage',
   components: {
     CircuitCard,
+    Card,
     AppButton,
     AppImage,
     Carousel,
@@ -239,6 +253,7 @@ export default {
 
   data() {
     return {
+      circuitList: Object.freeze(Object.keys(CIRCUITS)),
       eventList: Object.freeze(EVENT_LIST),
       keyNumberList: Object.freeze(KEY_NUMBER_LIST),
       stampList: Object.freeze(STAMP_LIST),
@@ -256,6 +271,7 @@ export default {
   },
 
   mounted() {
+    console.log(this.circuitList)
     document.addEventListener('scroll', this.onScrollListener)
 
     setTimeout(() => {
