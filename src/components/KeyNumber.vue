@@ -27,7 +27,7 @@ export default defineComponent({
   },
   computed: {
     label() {
-      return (this.prependOperator || '') + this.progessValue + (this.appendOperator || '')
+      return (this.prependOperator || '') + this.value + (this.appendOperator || '')
     },
   },
   methods: {

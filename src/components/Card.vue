@@ -1,5 +1,5 @@
 <template>
-  <div class="perspective w-[350px] h-[510px]">
+  <div class="perspective w-[350px] h-[500px]">
     <div
       class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d"
       :class="{ 'rotate-y-180': isFlipped }"
@@ -11,15 +11,19 @@
       >
         <img :src="imageList[circuit]" alt="illustration" class="w-full p-2 object-cover" />
 
-        <p class="text-darkBlue rocknroll-one-regular text-base text-widest text-center m-2 mt-0">
-          {{ circuitData.price }} / joueur
+        <p
+          class="text-darkBlue hidden rocknroll-one-regular text-base text-widest text-center m-2 -mt-2"
+        >
+          {{ circuitData.price }} / Joueur
         </p>
-        <img
-          src="../assets/icons/price/7.png"
-          alt="illustration"
-          class="absolute w-[70px] bottom-[140px] right-1 object-cover"
-        />
-        <div class="flex-1 flex flex-col justify-between">
+        <div
+          class="absolute size-[80px] flex justify-center items-center bg-[url('../assets/icons/cire.png')] bg-no-repeat bg-contain bottom-[125px] right-1 object-cover"
+        >
+          <span class="text-white rocknroll-one-regular text-xl mb-1">
+            {{ circuitData.price }}*</span
+          >
+        </div>
+        <div class="flex-1 flex flex-col justify-between mt-2">
           <div class="flex justify-center md:gap-10 gap-4">
             <div class="flex flex-col justify-between items-center gap-2">
               <img src="../assets/icons/duration.png" alt="Duration icon" class="md:w-10 w-8" />

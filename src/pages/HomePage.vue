@@ -122,7 +122,7 @@
           {{ $t('HOME.CIRCUITS.TITLE[0]') }}
         </p>
         <p>{{ $t('HOME.CIRCUITS.CONTENT[0]') }}</p>
-        <div class="flex flex-col items-center">
+        <!-- <div class="flex flex-col items-center">
           <Carousel
             :autoplay="5000"
             :transition="1200"
@@ -142,11 +142,11 @@
               <Pagination class="-bottom-4" />
             </template>
           </Carousel>
-          <div class="flex flex-wrap gap-12 my-4 justify-center">
-            <Card v-for="circuit in circuitList" :key="circuit" :circuit="circuit" />
-          </div>
+        </div> -->
+        <div class="flex flex-wrap gap-12 my-4 justify-center">
+          <Card v-for="circuit in circuitList" :key="circuit" :circuit="circuit" />
         </div>
-        <p>{{ $t('HOME.CIRCUITS.CONTENT[1]') }}</p>
+        <p class="italic">{{ $t('HOME.CIRCUITS.CONTENT[1]') }}</p>
         <p class="text-bold text-base">{{ $t('HOME.CIRCUITS.TITLE[1]') }}</p>
         <p>{{ $t('HOME.CIRCUITS.CONTENT[2]') }}</p>
         <p>{{ $t('HOME.CIRCUITS.CONTENT[3]') }}</p>
@@ -221,8 +221,6 @@
 </template>
 
 <script>
-import 'vue3-carousel/carousel.css'
-import { Carousel, Slide, Navigation, Pagination } from 'vue3-carousel'
 import { register } from 'swiper/element/bundle'
 import AppImage from '@/components/AppImage.vue'
 import KeyNumber from '@/components/KeyNumber.vue'
@@ -230,7 +228,6 @@ import SectionTitle from '@/components/SectionTitle.vue'
 import { EVENT_LIST, KEY_NUMBER_LIST, STAMP_LIST } from '@/data/global'
 import { formatImageUrl } from '@/data/helpers'
 import TimeLine from '@/components/TimeLine.vue'
-import CircuitCard from '@/components/CircuitCard.vue'
 import Card from '@/components/Card.vue'
 import AppButton from '@/components/AppButton.vue'
 import { CIRCUITS } from '@/data/circuits'
@@ -238,16 +235,11 @@ import { CIRCUITS } from '@/data/circuits'
 export default {
   name: 'HomePage',
   components: {
-    CircuitCard,
     Card,
     AppButton,
     AppImage,
-    Carousel,
     KeyNumber,
-    Navigation,
-    Pagination,
     SectionTitle,
-    Slide,
     TimeLine,
   },
 
@@ -295,14 +287,14 @@ export default {
      * @method onScrollListener to change the display of the navBar and launch the keyNumbers animation (callback on scroll listener)
      */
     onScrollListener() {
-      this.$refs.keyNumber.forEach((item) => {
+      /* this.$refs.keyNumber.forEach((item) => {
         const height = window.innerHeight,
           itemCenter = item.$el.offsetTop + item.$el.clientHeight / 2,
           scroll = window.scrollY
         const isVisible = itemCenter > scroll && itemCenter < scroll + height
 
         if (isVisible && !item.progressValue) item.animate()
-      })
+      })*/
 
       let scrollY = window.scrollY
       this.$refs.mockup1.$el.style.transform = `translateY(${scrollY * -0.3}px)`

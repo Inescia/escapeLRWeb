@@ -16,7 +16,7 @@ export const CIRCUITS = {
   },
   esclavage: {
     level: 'Modéré',
-    duration: '120 min',
+    duration: '140 min',
     distance: '2 km',
     price: '8€',
     stripeLink: 'https://buy.stripe.com/fZu5kC2RobSdd7Pflz9AA02',
