@@ -140,8 +140,9 @@ export default defineComponent({
         black: 'rgb(30, 32, 30)',
         beige: 'rgb(234, 199, 159)',
       }
+      console.log(this.$route.name)
 
-      if (scroll < height - margin || this.isDark) {
+      if (scroll < height - margin || this.$route.name === 'legal') {
         containerRef.style.backgroundColor = 'transparent'
         categoryRefList.forEach((category) => {
           if (category instanceof HTMLElement)

@@ -17,7 +17,10 @@
           {{ circuitData.price }} / Joueur
         </p>
         <div
-          class="absolute size-[80px] flex justify-center items-center bg-[url('../assets/icons/cire.png')] bg-no-repeat bg-contain bottom-[125px] right-1 object-cover"
+          :class="[
+            pricePositionClass,
+            `absolute size-[80px] flex justify-center items-center bg-[url('../assets/icons/cire.png')] bg-no-repeat bg-contain object-cover`,
+          ]"
         >
           <span class="text-white rocknroll-one-regular text-xl mb-1">
             {{ circuitData.price }}*</span
@@ -34,7 +37,7 @@
               <span class="text-blue quicksand-bold">{{ circuitData.distance }}</span>
             </div>
             <div class="flex flex-col justify-between items-center gap-2">
-              <img src="../assets/icons/level.png" alt="Level icon" class="md:w-10 w-8" />
+              <img :src="levelIcons[circuit]" alt="Level icon" class="md:w-10 w-8" />
               <span class="text-blue quicksand-bold">{{ circuitData.level }}</span>
             </div>
           </div>
@@ -48,16 +51,14 @@
 
       <!-- Face arrière -->
       <div
-        class="absolute w-full h-full rounded-2xl shadow-lg backface-hidden rotate-y-180 flex flex-col justify-between items-center"
+        class="absolute w-full h-full bg-white rounded-2xl shadow-3xl backface-hidden rotate-y-180 flex flex-col justify-between items-center"
       >
-        <div class="w-full h-fit">
-          <h2 class="text-darkBlue text-lg rocknroll-one-regular mt-12 mb-0 text-center">
-            {{ $t(`CIRCUITS.${circuit.toUpperCase()}.NAME`) }}
-          </h2>
-          <p class="text-darkBlue text-xs p-4 m-0">
-            {{ $t(`CIRCUITS.${circuit.toUpperCase()}.DESCRIPTION`) }}
-          </p>
-        </div>
+        <h2 class="text-darkBlue text-lg rocknroll-one-regular mt-6 mb-0 text-center">
+          {{ $t(`CIRCUITS.${circuit.toUpperCase()}.NAME`) }}
+        </h2>
+        <p class="text-darkBlue text-xs p-4 m-0">
+          {{ $t(`CIRCUITS.${circuit.toUpperCase()}.DESCRIPTION`) }}
+        </p>
         <div class="flex flex-row items-center justify-between mx-2 mb-1">
           <AppButton :is-animated="false" :label="$t('GLOBAL.BUY_CODE')" @click="goToStripe" />
           <AppButton :is-animated="false" bg-color="bg-blue" label="- d'info" />
@@ -75,6 +76,9 @@ import tours from '../assets/circuits/parcours-tours.png'
 import richelieu from '../assets/circuits/parcours-richelieu.png'
 import esclavage from '../assets/circuits/parcours-esclavage.png'
 import nazis from '../assets/circuits/parcours-nazis.png'
+import level1 from '../assets/icons/level1.png'
+import level2 from '../assets/icons/level2.png'
+import level3 from '../assets/icons/level3.png'
 
 export default defineComponent({
   // eslint-disable-next-line vue/multi-word-component-names
@@ -92,12 +96,30 @@ export default defineComponent({
         esclavage,
         nazis,
       },
+      levelIcons: {
+        tours: level1,
+        richelieu: level2,
+        esclavage: level2,
+        nazis: level3,
+      },
       isFlipped: false,
     }
   },
   computed: {
     circuitData() {
       return this.circuits[this.circuit]
+    },
+    pricePositionClass() {
+      switch (this.circuitData.position) {
+        case 'tl':
+          return 'top-6 left-6'
+        case 'tr':
+          return 'top-5 right-6'
+        case 'bl':
+          return 'bottom-[170px] left-7'
+        default:
+          return 'bottom-[170px] right-4'
+      }
     },
   },
   methods: {
@@ -117,6 +139,10 @@ export default defineComponent({
 }
 .rotate-y-180 {
   transform: rotateY(180deg);
+}
+
+.rotate-y-40 {
+  transform: rotateY(40deg);
 }
 .transform-style-preserve-3d {
   transform-style: preserve-3d;

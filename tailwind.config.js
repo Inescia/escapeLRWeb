@@ -7,7 +7,7 @@ export default {
         lg: '1025px',
       },
       boxShadow: {
-        '3xl': '0 15px 40px -12px rgb(0 0 0 / 0.25)',
+        '3xl': '0 15px 40px -12px rgb(0 0 0 / 0.5)',
       },
       colors: {
         black: '#1E201E',

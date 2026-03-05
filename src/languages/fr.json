@@ -2,19 +2,19 @@
   "CIRCUITS": {
     "TOURS": {
       "NAME": "Dans l’ombre des Tours",
-      "DESCRIPTION": "Plongez dans l’histoire maritime de La Rochelle à travers les siècles ⚓️. Commerce, pêche et défense se mêlent dans une intrigue pleine de mystères.\nLes pierres du Vieux-Port, les quais et les tours vous murmurent des secrets anciens 📜 …\nÀ vous, équipage intrépide, de déjouer la malédiction de la grande chaîne du port ⛓️ et de prouver votre légitimité au vieux capitaîne. Le temps presse ⏳ : chaque minute compte pour lever l’enchantement et prendre le large 🌊."
+      "DESCRIPTION": "Plongez dans l’histoire maritime de La Rochelle à travers les siècles ⚓️. Commerce, pêche et défense se mêlent dans une intrigue pleine de mystères.\n\nLes pierres du Vieux-Port, les quais et les tours vous murmurent des secrets anciens 📜 …\n\nÀ vous, équipage intrépide, de déjouer la malédiction de la grande chaîne du port ⛓️ et de prouver votre légitimité au vieux capitaîne. Le temps presse ⏳ : chaque minute compte pour lever l’enchantement et prendre le large 🌊."
     },
     "RICHELIEU": {
       "NAME": "Les Secrets de Richelieu",
-      "DESCRIPTION": "La Rochelle, 1627 🏰. Ville libre et prospère, bastion du protestantisme ⛪️ et carrefour du commerce, elle défie l’autorité royale.\nLouis XIII 👑, conseillé par le redoutable Cardinal de Richelieu, décide de soumettre la cité à son contrôle ⚔️.\nLe siège commence : digues, blocus et soldats affamants encerclent la ville, coupant tout ravitaillement. Pourtant, dans l’ombre, des réseaux clandestins tentent de faire passer vivres et messages secrets.\nRues étroites, chapelles oubliées 🕯️. Explorez la ville assiégée et révélez les mystères que Richelieu espérait enterrer."
+      "DESCRIPTION": "La Rochelle, 1627 🏰. Ville libre et prospère, bastion du protestantisme ⛪️ et carrefour du commerce, elle défie l’autorité royale. Louis XIII 👑, conseillé par le redoutable Cardinal de Richelieu, décide de soumettre la cité à son contrôle ⚔️.\n\nLe siège commence : digues, blocus et soldats affamants encerclent la ville, coupant tout ravitaillement. Pourtant, dans l’ombre, des réseaux clandestins tentent de faire passer vivres et messages secrets.\n\nRues étroites, chapelles oubliées 🕯️. Explorez la ville assiégée et révélez les mystères que Richelieu espérait enterrer."
     },
     "ESCLAVAGE": {
       "NAME": "L’Héritage Colonial",
-      "DESCRIPTION": "La Rochelle, 1793 ⛓️. Les quais du port bruissent de secrets, et l’air est chargé d’épices, de sel et de murmures.\nDe grands navires ⛵️ chargés de marchandises mystérieuses partent vers des horizons lointains 🌴. Chaque monument, chaque ruelle semble receler des indices oubliés.\nIci, les pierres racontent des histoires à faire froid dans le dos, seuls les plus courageux iront les écouter …\nEt vous, oserez-vous les entendre ?"
+      "DESCRIPTION": "La Rochelle, 1793 ⛓️. Les quais du port bruissent de secrets, et l’air est chargé d’épices, de sel et de murmures.\n\nDe grands navires ⛵️ chargés de marchandises mystérieuses partent vers des horizons lointains 🌴. Chaque monument, chaque ruelle semble receler des indices oubliés.\n\nIci, les pierres racontent des histoires à faire froid dans le dos, seuls les plus courageux iront les écouter …\n\nEt vous, oserez-vous les entendre ?"
     },
     "NAZIS": {
       "NAME": "Le Code des Résistants",
-      "DESCRIPTION": "La Rochelle, 1944 🌊. La guerre touche à sa fin, mais la ville reste occupée par une garnison allemande 🇩🇪. Dans l’ombre, un réseau clandestin agit 🥷, échangeant informations et secrets pour protéger les habitants.\nDes bases sous-marines dissimulées aux messages codés échangés, la ville elle-même devient un terrain de jeu pour vos talents d’observation et de décryptage.\nSaurez-vous suivre les traces de la Résistance et déjouer les plans ennemis 🗺️ ?"
+      "DESCRIPTION": "La Rochelle, 1944 🌊. La guerre touche à sa fin, mais la ville reste occupée par une garnison allemande 🇩🇪. Dans l’ombre, un réseau clandestin agit 🥷, échangeant informations et secrets pour protéger les habitants.\n\nDes bases sous-marines dissimulées aux messages codés échangés, la ville elle-même devient un terrain de jeu pour vos talents d’observation et de décryptage.\n\nSaurez-vous suivre les traces de la Résistance et déjouer les plans ennemis 🗺️ ?"
     }
   },
 
@@ -104,7 +104,7 @@
   "LEGAL": [
     {
       "TITLE": "Propriétaire du site",
-      "CONTENT": "Ingenious Code ! / Inès Ciattoni\nAdresse : 70 Avenue de Moutille 33360 Cenac FRANCE\nTéléphone : 07.60.27.45.41\nMail : {mail}"
+      "CONTENT": "Statut juridique : Micro-entreprise\nNom commercial : Ingenious Code !\nResponsable : Inès Ciattoni\nNuméro SIRET : 93967835500016\nAdresse : 70 Avenue de Moutille 33360 Cenac FRANCE\nTéléphone : 07.60.27.45.41\nMail : {mail}"
     },
     {
       "TITLE": "Hébergeur",
@@ -113,6 +113,44 @@
     {
       "TITLE": "Propriété intellectuelle & Données personnelles",
       "CONTENT": "Tous les contenus sont protégés : textes, images, logos et illustrations. Toute reproduction ou usage sans autorisation est interdite.\nCe site ne collecte ni ne stocke de données personnelles."
+    }
+  ],
+  "CGV": [
+    {
+      "TITLE": "Objet",
+      "CONTENT": "Les présentes Conditions Générales de Vente (CGV) définissent les modalités de vente des codes d’accès permettant l’utilisation de l’application d’escape game éditée par Ingenious Code !.\nL’achat d’un code d’accès implique l’acceptation pleine et entière des présentes CGV."
+    },
+    {
+      "TITLE": "Description du service",
+      "CONTENT": "Le site propose à la vente des codes d’accès permettant à une équipe de participer à une partie d’escape game via une application.\nLe prix est indiqué par joueur. Toutefois, l’achat du code d’accès s’effectue en une seule fois pour l’ensemble de l’équipe.\nLe code est transmis par voie électronique après validation du paiement."
+    },
+    {
+      "TITLE": "Prix",
+      "CONTENT": "Les prix sont indiqués en euros (€) et s’entendent toutes taxes comprises (TTC), sauf mention contraire.\nIngenious Code ! se réserve le droit de modifier ses tarifs à tout moment. Le prix applicable est celui en vigueur au moment de la commande."
+    },
+    {
+      "TITLE": "Paiement",
+      "CONTENT": "Le paiement est exigible immédiatement à la commande.\nLes règlements sont effectués via la plateforme sécurisée Stripe. Les données bancaires ne sont ni collectées ni conservées par le site."
+    },
+    {
+      "TITLE": "Absence de droit de rétractation",
+      "CONTENT": "Conformément à l’article L221-28 du Code de la consommation, le droit de rétractation ne peut être exercé pour les contenus numériques fournis sur un support immatériel dont l’exécution a commencé après accord préalable exprès du client.\n\nAucun remboursement ne sera effectué après l’achat du code d’accès, sauf cas exceptionnel laissé à l’appréciation d’Ingenious Code !. Toute demande devra être adressée par email."
+    },
+    {
+      "TITLE": "Responsabilité",
+      "CONTENT": "Ingenious Code ! ne saurait être tenue responsable en cas de problème technique indépendant de sa volonté (interruption internet, incompatibilité matérielle, mauvaise utilisation de l’application).\n\nL’utilisateur est responsable de la vérification de la compatibilité de son équipement avant achat."
+    },
+    {
+      "TITLE": "Propriété intellectuelle",
+      "CONTENT": "L’ensemble des contenus de l’application et du site (textes, scénarios, visuels, illustrations, logos) est protégé par le droit de la propriété intellectuelle.\n\nToute reproduction, diffusion ou exploitation sans autorisation écrite préalable est strictement interdite."
+    },
+    {
+      "TITLE": "Données personnelles",
+      "CONTENT": "Le site ne collecte ni ne stocke de données bancaires.\n\nLes éventuelles données transmises via formulaire de contact sont utilisées uniquement pour répondre aux demandes et ne sont pas revendues à des tiers."
+    },
+    {
+      "TITLE": "Droit applicable",
+      "CONTENT": "Les présentes CGV sont soumises au droit français.\n\nEn cas de litige, une solution amiable sera recherchée avant toute action judiciaire. À défaut, les tribunaux français seront seuls compétents."
     }
   ]
 }

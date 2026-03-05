@@ -6,6 +6,7 @@ export const CIRCUITS = {
     distance: '2 km',
     price: '5€',
     stripeLink: 'https://buy.stripe.com/9B64gybnUcWhc3L0qF9AA00',
+    position: 'br',
   },
   richelieu: {
     level: 'Modéré',
@@ -13,6 +14,7 @@ export const CIRCUITS = {
     distance: '2 km',
     price: '8€',
     stripeLink: 'https://buy.stripe.com/00w5kCcrYf4pffX8Xb9AA01',
+    position: 'tl',
   },
   esclavage: {
     level: 'Modéré',
@@ -20,6 +22,7 @@ export const CIRCUITS = {
     distance: '2 km',
     price: '8€',
     stripeLink: 'https://buy.stripe.com/fZu5kC2RobSdd7Pflz9AA02',
+    position: 'tr',
   },
   nazis: {
     level: 'Difficile',
@@ -27,5 +30,6 @@ export const CIRCUITS = {
     distance: '2 km',
     price: '10€',
     stripeLink: 'https://buy.stripe.com/dRmfZg9fM8G1aZH4GV9AA03',
+    position: 'bl',
   },
 }
