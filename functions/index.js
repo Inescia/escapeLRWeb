@@ -68,6 +68,27 @@ export const sendEmail = https.onRequest(
   },
 )
 
+export const generateCodes = https.onRequest(
+  // eslint-disable-next-line no-unused-vars
+  async (req, res) => {
+    for (const parcoursName of ['tours', 'richelieu', 'esclavage', 'nazis']) {
+      const code = _generateCode()
+      const mail = 'ineswcia@gmail.com'
+
+      await db.collection('Codes').doc(code).set({
+        id: code,
+        creationDate: admin.firestore.FieldValue.serverTimestamp(),
+        mail,
+        parcoursName,
+        status: 'ready',
+      })
+      console.log(`Code généré pour ${mail}: ${code}`)
+      _sendMail(mail, code, parcoursName)
+    }
+    res.sendStatus(200)
+  },
+)
+
 function _generateCode(length = 8) {
   const chars = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789'
   let result = ''
